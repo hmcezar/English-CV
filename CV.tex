@@ -78,6 +78,14 @@
 \vspace{0.2in}
 }
 
+\newcommand{\newsoftware}[3]{
+\begin{adjustwidth}{-1in}{-1in}  
+\begin{tabular}{p{0.9in}p{7in}}
+\parbox[c]{0.9in}{} & \parbox[c]{6in}{\setstretch{0.9} {\scriptsize {#1}} \\ {\bf #2}  \\ {\footnotesize\emph {#3}}}
+\end{tabular}
+\end{adjustwidth}
+\vspace{0.2in}
+}
 % ---- TALKS
 \newcommand{\talk}[2]{
 \noindent\marginpar{
@@ -153,77 +161,84 @@
 \begin{document}
 \reversemarginpar
 % FILL IN NAME HERE
-{\fontseries{eb}\selectfont \LARGE Henrique M. Cezar}\\[1cm]
+{\fontseries{eb}\selectfont \LARGE Henrique Musseli Cezar}\\[1cm]
 
 % FILL IN AUTHOR INFORMATION HERE
 \begin{minipage}[t]{2.5in}
 %\Large CONTACT
 %%\includegraphics[width=0.7in,valign=c]{images/john_chodera_sm.pdf}
-\includegraphics[width=1.5in,valign=c]{images/henrique.png}
+\hspace{35pt}
+\includegraphics[width=1.3in,valign=c]{images/henrique.png}
 \end{minipage}
 %\quad
 \begin{minipage}[t]{3in}
 \begin{tabular}{rl}
 {\bf email} & \href{mailto:henrique.cezar@usp.br}{\href{mailto:henrique.cezar@usp.br}{henrique.cezar@usp.br}}\\[0.05in]
-% {\bf url} & \href{http://www.choderalab.org}{http://www.choderalab.org}\\[0.05in]
-% {\bf github} & \href{https://github.com/choderalab}{https://github.com/choderalab}\\[0.05in]
-% {\bf twitter} & \href{http://twitter.com/jchodera}{jchodera}\\[0.05in]
+
 {\bf tel} & +55 11 3091-6662\\[0.05in]
 {\bf mobile} & +55 11 96722-8992\\[0.05in]
-%{\bf fax} & 646.422.0717 \\[0.05in]
-%{\bf mobile} & 646.737.3319\\[0.05in]
 {\bf post} & 
-\parbox[t]{3.0in}{%Memorial Sloan Kettering Cancer Center\\
+\parbox[t]{3.0in}{
 1371 Rua do Mat\~ao, Ala 1, Room 223\\
 S\~ao Paulo, SP, 05508-090}
 \end{tabular}
 \end{minipage}
 
-% RESEARCH INTERESTS
-%\section*{Research interests}
-%\noindent {\bf Computational biophysics}, especially \\
-%\noindent {\bf Single-molecule biophysics}, including new techniques for interpreting force microscopy \\
-%\noindent {\bf Nonequilibrium statistical mechanics}, as tools for single-molecule experimental probes and the design of new algorithms for computational chemistry \\
+\vspace{20pt} 
+
+\noindent\fbox{%
+    \parbox{\textwidth}{ 
+    {I am a Ph.D. candidate working with computational physics and developing scientific software. My main interest is the efficient sampling of conformations and thermodynamic properties, specially using Monte Carlo methods.}
+    }
+}
 
 \setstretch{1.05} 
 
 \section*{Education}
 
-\noindent\years{2015--}{\bf \textsc{Ph.D. Candidate} in Physics, Institute of Physics, University of S\~ao Paulo}\\
-Implementation and Development of Efficient Algorithm for Intramolecular Deformation with the Monte Carlo Method (Advisor: Dr. Kaline R. Coutinho) \\
-\noindent\years{2013--2015}{\bf \textsc{Master's} in Computational Physics, S\~ao Carlos Institute of Physics, University of S\~ao Paulo}\\
-Implementation of the Parallel Tempering Monte Carlo Method to the Study of Thermodynamic Properties of Nanoclusters (Advisor: Dr. Juarez L. F. Da Silva) \\
-\noindent\years{2009--2012}{\bf \textsc{B.S.} in Computational Physics, S\~ao Carlos Institute of Physics, University of S\~ao Paulo}\\
-Undergraduate Research with Dr. Leonardo P. Maia: Fluid Dynamics in Porous Media with Lattice Boltzmann\\
-\noindent\years{2006--2008}{\bf \textsc{Technical Course} in Informatics, Col\'egio Divino Salvador}
+\noindent\years{2015--}{\bfseries \textsc{Ph.D. Candidate} in Physics, Institute of Physics, University of S\~ao Paulo}\\
+Implementation and Development of Efficient Algorithm for Intramolecular Deformation with the Monte Carlo Method \\
+CNPq Ph.D. Fellowship - Advisor: Dr. Kaline R. Coutinho \\
+\noindent\years{2013--2015}{\bfseries \textsc{Master's} in Computational Physics, S\~ao Carlos Institute of Physics, University of S\~ao Paulo}\\
+Implementation of the Parallel Tempering Monte Carlo Method to the Study of Thermodynamic Properties of Nanoclusters \\
+FAPESP Master Fellowship - Advisor: Dr. Juarez L. F. Da Silva \\
+\noindent\years{2009--2012}{\bfseries \textsc{B.S.} in Computational Physics, S\~ao Carlos Institute of Physics, University of S\~ao Paulo}\\
+Undergraduate Research with Dr. Leonardo P. Maia: Fluid Dynamics in Porous Media with Lattice Boltzmann - CNPq Scientific Initiation Fellowship
 
 \section*{Complementary Education}
-\noindent\years{2015}{\bf \textsc{Coursera Online Course:} Algorithms: Design and Analysis, Part 1. (Duration: 36h). Stanford University}
+\noindent\years{2015}{\textsc{Coursera Online Course:} Algorithms: Design and Analysis, Part 1. (Duration: 36h). Stanford University}
+\noindent\years{2006--2008}{\textsc{Technical Course} in Informatics, Col\'egio Divino Salvador}
 
-\section*{Fellowships}
+% \section*{Fellowships}
 
-\noindent\years{2015--}CNPq Ph.D. Fellowship\\
-\noindent\years{2013--2015}FAPESP Master Fellowship\\
-\noindent\years{2012--2012}CNPq Scientific Initiation Fellowship
+% \noindent\years{2015--}CNPq Ph.D. Fellowship\\
+% \noindent\years{2013--2015}FAPESP Master Fellowship\\
+% \noindent\years{2012--2012}CNPq Scientific Initiation Fellowship
 
 \section*{Computational Skills}
+Proficient with programming languages (from more to less proficient): Fortran (legacy and modern), C, Python, C++ and Bash. I have experience with OpenMP parallelization, code profiling and optimization, and also have knowledge in MPI and Pthreads parallelization. Experience in using software versioning (Git and SVN).
 
 \section*{Research overview}
-
-My research is mainly focused on the development of code and algorithms to efficiently sample properties of molecules and nanoclusters with intricate potential energy surface and/or embedded in solvent.
+My research is mainly focused on the development of algorithms and computer code to efficiently sample properties of molecules and nanoclusters with intricate potential energy surface and/or embedded in solvent.
 Specifically, I have experience with Monte Carlo methods and extended ensemble methods, such as replica exchange.
+I also have some experience in global optimization and clustering.
 Recently, my work has been focused on the development of a Bias Monte Carlo method to sample internal degrees of freedom of molecules in solution, which is the main theme of my Ph.D. thesis.
-To achieve the objectives of my research, my work rely on high performance computing, and for this reason, I also have interest in data structures and parallelism.
-
-% My research focuses on {\bf redesigning the way we develop small molecules for chemical biology and drug discovery} and {\bf bringing rigorous atomistic modeling into the high-throughput biology and genomics era}.
-% By combining novel algorithmic advances to achieve orders-of-magnitude efficiency gains with powerful but inexpensive GPU hardware and distributed computing technologies, I am developing a new generation of tools for predicting small molecule binding affinities, designing small molecules with desired properties, and quantifying drug sensitivity or resistance of clinical mutations.
-% As a core member of the \href{https://foldingathome.stanford.edu/about/the-foldinghome-consortium/}{Folding@home Consortium}, my lab harnesses the computing power of hundreds of thousands of volunteers around the world to study functional implications of mutations and new opportunities for therapeutic design against cancer targets.
-% Using a unique automated biophysical workstation we designed, my laboratory collects new experimental data targeted to advance the quantitative accuracy of our methodologies, and gather new insight into drug susceptibility in kinases and other cancer targets.
-% My work makes extensive use of Bayesian statistical inference methods and information theoretic principles for designing experiments and quantifying error.
+To achieve the objectives of my research, my work rely on high performance computing, and for this reason, I also have some interest in this field.
 
 \setstretch{1.00} 
 
 \eject
+
+%%%%%%%%%%%%
+
+
+\section*{Software development}
+Apart from several scripts and smaller software, I am one of the main developers of two scientific softwares:\\
+
+\newsoftware{{\bfseries Cezar HM}, Canuto S, Coutinho K}{Dice}{A Monte Carlo code for simulation of liquids and gases, specifically, solute/solvent systems. My main contribution is the coding and development of a Configurational Bias Monte Carlo method to add the sampling of internal degrees of freedom of molecules. The code is written in Fortran and has OpenMP parallelization.}
+
+\newsoftware{Rondina GG, {\bfseries Cezar HM}, Da Silva JLF}{GOTNano}{A code for global optimization and to obtain thermodynamic properties of nanoclusters. My main contribution is the implementation of the Parallel Tempering Monte Carlo algorithm to sample the thermodynamic properties. The code is written in C and has OpenMP parallelization.}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PUBLICATIONS
@@ -231,415 +246,29 @@ To achieve the objectives of my research, my work rely on high performance compu
 
 \section*{Publications}
 
-\setstretch{1.05} 
-
-Google Scholar statistics: \href{http://goo.gl/qO0JW}{http://goo.gl/qO0JW} \hspace{0.2in} \\
-MyNCBI Bibliography: \href{http://goo.gl/e3kjgK}{http://goo.gl/e3kjgK} \\
-{\small \it h-index: 31 / i10-index: 46 / citations: 5130 (6 Nov 2016)}\\
-{\scriptsize $^*$ asterisk denotes equal contributions}
-
-\setstretch{1.00} 
-
 %%%%%%%%%%%%
 
-\section*{Submitted and Under Review}
+\subsection*{Submitted and Under Review}
 
-\newarticle{id1}{Wojnarowicz P, Desai B, Chin Y, Lima e Silva R, Ohnaka M, Lee SB, Cao MG, Ouerfelli O, Xu S, Goldgur Y, Miller M, Chaudhary J, Garland W, Stoller G, Albanese SA, Soni R, Philip J, Healey J, Vinagolu R, Norton L, Rosen N, Hendrickson R, Iavarone A, Dannenberg A, {\bf Chodera JD}, Pavletich N, Lasorella A, Campochiaro P, Benezra R}{A small-molecule pan Id antagonist, AGX51, shows strong anti-tumor and anti-neovascular activity}{\emph{Under review at Nature}}{}{}{We identify the binding site of a new small-molecule pan-Id antagonist prior to its confirmation by mass spectrometry crosslinking data}
-
-\newarticle{nanoparticle}{Shamay Y, Shah J, Tschaharganeh DF, Roxbury D, Budhathoki-Uprety J, I\j{s}ik M, Mizrachi A, Nawaly K, Sugarman JL, Baut E, Neiman MR, Johnson DC, Sridharan R, Chu KL, Rajasekhar VK, {\bf Chodera JD}, Lowe SW, and Heller DA}{Quantitative self-assembly prediction yields targeted nanoparticles}{\emph{Under revision for Nature~Materials}}{}{}{A decision tree based on predicted physical properties and and molecular descriptors is capable of predicting the assembly of drug/dye nanoparticles that can be used in tumor-targeted selective kinase inhibitor therapy to minimize on- and off-pathway toxicity.}
-
-\newarticle{openmm7-logo}{Eastman P, Swails J, {\bf Chodera JD}, McGibbon RT, Zhao Y, Beauchamp KA, Wang LP, Simmonett AC, Harrigan MP, Brooks BR, and Pande VS}{OpenMM 7: Rapid development of high performance algorithms for molecular dynamics}{\emph{Under revision for PLoS~Computational~Biology}}{}{}{The latest version of the GPU-accelerated molecular simulation OpenMM features a variety of incredibly flexible but fast tools for rapidly prototyping, evaluating, and deploying new simulation algorithms.}
+\newarticle{similarity_lj.pdf}{{\bfseries Cezar HM}, Rondina GG, Da Silva JLF}{Parallel Tempering Monte Carlo Combined with Clustering Euclidean Metrics Analysis to Study the Thermodynamic Stability of Lennard-Jones Nanoclusters}{\emph{Under review at Journal of Chemical Physics}}{}{}{We use a clustering algorithm to analyze trajectories from a Parallel Tempering Monte Carlo simulation of Lennard-Jones nanoclusters, identifying the phase changes and most most frequent structures with great accuracy using a simple approach.}
 
 %\eject
 
 %%%%%%%%%%%%
 
-\section*{Preprints ahead of submission}
+\subsection*{Published}
 
-\newarticle{kinase-library}{Parton DL, Hanson SM, Rodr\'{i}guez-Laureano L, Albanese SK, Gradia S, Jeans C, Seeliger M, {\bf Chodera JD}}{An open library of human kinase domain constructs for automated bacterial expression}{\emph{Preprint ahead of submission}}{bioR$\chi$v}{http://dx.doi.org/10.1101/038711}{We engineer a library of human kinase domains with useful bacterial expression using a novel phosphatase coexpression technique.}
+\newarticle{alloys_douglas.pdf}{De Souza DG, {\bfseries Cezar HM}, Rondina GG, De Oliveira MF, Da Silva JLF}{A Basin-hopping Monte Carlo Investigation of the Structural and Energetic Properties of 55- and 561-atom Bimetallic Nanoclusters: the Examples of the ZrCu, ZrAl, and CuAl Systems}{\emph{Journal of Physics: Condensed Matter} 28:175302, 2016}{DOI}{http://dx.doi.org/10.1088/0953-8984/28/17/175302}{We report a basin-hopping Monte Carlo investigation of the structural and energetic properties of bimetallic ZrCu, ZrAl, and CuAl nanoclusters with 55 and 561 atoms, showing how the atoms of the different species are distributed in the structure and a trend of more spherical structures at 50-50 compositions.}
 
-\newarticle{itc-worksheet}{Boyce SE, Tellinghuisen JT, and {\bf Chodera JD}}{Avoiding accuracy-limiting pitfalls in the study of protein-ligand interactions with isothermal titration calorimetry}{\emph{Preprint ahead of submission}}{bioR$\chi$v}{http://dx.doi.org/10.1101/018036}{We demonstrate how to avoid accuracy-limiting problems in standard isothermal calorimetry experiments as well as capture the primary sources of uncertainty in thermodynamic parameters.}
-
-\newarticle{bhmm.pdf}{{\bf Chodera JD}, No\'{e} F, Hinrichs NS, Keller B, Elms PJ, Kaiser CM, Ewall-Wice A, Marqusee S, and Bustamante C}{Bayesian hidden Markov model analysis of single-molecule biophysical experiments}{\emph{Preprint ahead of submission}}{ar$\chi$iv}{http://arxiv.org/find/all/1/all:+chodera/0/1/0/all/0/1}{We present a Bayesian hidden Markov model analysis scheme that allows biomolecular conformational dynamics to be inferred from single-molecule trajectories.}
-
-\newarticle{robust-rate-estimates.pdf}{{\bf Chodera JD}, Elms PJ, Swope WC, Prinz J-H, Marqusee S, Bustamante C, No\'{e} F, and Pande VS}{A robust approach to estimating rates from time-correlation functions}{\emph{Preprint ahead of submission}}{ar$\chi$iv}{http://arxiv.org/abs/1108.2304}{We present a simple, robust approach to estimating two-state rate constants from experimental or simulation data.}
-
-%%%%%%%%%%%%
-
-\section*{Reviews and Commentaries}
-
-\newarticle{msm-projection.pdf}{{\bf Chodera JD} and No\'{e} F}{Markov state models of biomolecular conformational dynamics}{\emph{Current Opinion in Structural Biology} 25:135, 2014}{DOI}{http://dx.doi.org/10.1016/j.sbi.2014.04.002}{A review of the exciting developments in the stochastic modeling of biomolecular dynamics over the last few years.}
-
-\newarticle{entropy-enthalpy-compensation.pdf}{{\bf Chodera JD} and Mobley DL}{Entropy-enthalpy compensation: Role and ramifications for rational ligand design}{\emph{Annual Reviews in Biophysics} 42:121, 2013}{DOI}{http://dx.doi.org/10.1146/annurev-biophys-083012-130318}{Entropy-enthalpy compensation is likely a universal phenomena, but not as severe as widely thought, and likely not of enormous concern for drug discovery and ligand design.}
-
-\newarticle{alchemical-methods.pdf}{{\bf Chodera JD}, Mobley DL, Shirts MR, Dixon RW, Branson KM, and Pande VS}{Free energy methods in drug discovery and design: Progress and challenges}{\emph{Current Opinion in Structural Biology} 21:150, 2011}{DOI}{http://dx.doi.org/10.1016/j.sbi.2011.01.011}{A review of the opportunities and challenges for alchemical free energy calculations in drug discovery and design.}
-
-\newarticle{markov-model-generation-3.pdf}{Prinz JH, Wu H, Sarich M, Keller B, Fischbach M, Held M, {\bf Chodera JD}, Sch\"{u}tte, and No\'{e} F}{Markov models of molecular kinetics: Generation and validation}{\emph{Journal of Chemical Physics} 134:174105, 2011}{DOI}{http://dx.doi.org/10.1063/1.3565032}{A review of current best practices for the generation and validation of Markov state models for describing the stochastic dynamics of biomolecular systems.}
-
-\newarticle{social-network.pdf}{{\bf Chodera JD} and Pande VS}{The Social Network (of protein conformations)}{\emph{Proceedings of the National Academy of Sciences} 108:12969, 2011}{DOI}{http://dx.doi.org/10.1073/pnas.1109571108}{A new methodology for mapping protein conformational spaces is reminiscent of how we use two-dimensional maps to navigate a three-dimensional world.}
-
-\newarticle{binding-free-energy.pdf}{Shirts MR, Mobley DL, {\bf Chodera JD}}{Alchemical free energy calculations: Ready for prime time?}{\emph{Annual Reports in Computational Chemistry} 3:41, 2007}{DOI}{http://dx.doi.org/10.1016/S1574-1400(07)03004-6}{A review of current alchemical free energy methodologies assessing whether they are ready for practical use in drug discovery and ligand design.}
-
-\newarticle{folding-funnel.pdf}{Dill KA, Ozkan SB, Weikl TR, {\bf Chodera JD}, and Voelz VA}{The protein folding problem: When will it be solved?}{\emph{Current Opinion in Structural Biology} 17(3):342, 2007}{DOI}{http://dx.doi.org/10.1016/j.sbi.2007.06.001}{A review of the current state of the protein folding problem.}
-
-\eject
-
-%%%%%%%%%%%%
-
-\section*{Published and In Press}
-
-\newarticle{aurora}{Cyphers S, Ruff E, Behr JM, {\bf Chodera JD}, and Levinson NM}{A conserved water-mediated hydrogen bond network governs allosteric activation in Aurora\\ kinase A}{\emph{Nature Chemical Biology}, in press.}{}{}{Over 50 microseconds of aggregate simulation data on Folding@home reveal a surprisingly stable hydrogen bond network underlies allosteric activation by Tpx2.}
-
-\newarticle{ldha-protonation-state-effects}{Intlekofer A, Wang B, Liu H, Shah H, Carmona-Fontaine C, Rustenburg AS, Salah S, Gunner MR, {\bf Chodera JD}, Cross JR, and Thompson CB}{Acidification enhances production of L-2-hydroxyglutarate through alternative substrate use by dehydrogenase enzymes}{\emph{Nature Chemical Biology}, in press.}{}{}{At low p$H$, metabolic enzymes lactate dehydrogenase and malate dehydrogenase undergo shifts in substrate utilization that have high relevance to cancer metabolism due to surprisingly simple protonation state effects.}
-
-\newarticle{mtor-mutations.pdf}{Xu~J, Pham~CG, Albanese~SK, Dong~Y, Oyama~T, Lee~CH, Rodrik-Outmezguine~V, Yao~Z, Han~S, Chen~D, Parton~DL, {\bf Chodera~JD}, Rosen~N, Cheng~EH, and Hsieh~JJ}{Mechanistically distinct cancer-associated mTOR activation clusters predict sensitivity to rapamycin}{\emph{Journal of Clinical Investigation} 126:3529, 2016}{DOI}{https://doi.org/10.1172/JCI86120}{We use massively parallel distributed molecular simulations on Folding\@home to probe the mechanism activating mutations of the mTOR kinase identified in clinical populations.}
-
-\newarticle{sampl5-logd.pdf}{Rusteburg AS, Dancer J, Lin B, Ortwine D, Mobley DL, and {\bf Chodera JD}}{Measuring cyclohexane-water distribution coefficients for the SAMPL5 challenge}{\emph{Journal of Computer Aided Molecular Design}, in press}{DOI}{http://dx.doi.org/10.1007/s10822-016-9971-7}{To test the accuracy of physical modeling techniques in predicting free energies of transfer between aqueous and nonpolar solvents, we worked with Genentech to develop a new protocol to measure cyclohexane-water distribution coefficients for 53 druglike compounds at pH 7.4, fielding a blind community challenge as part of the \href{https://drugdesigndata.org/about/sampl5}{SAMPL5 exercise}.}
-
-\newarticle{ensembler.pdf}{Parton DL, Grinaway PB, Hanson SM, Beauchamp KA, and {\bf Chodera JD}}{Ensembler: Enabling high-throughput molecular simulations at the superfamily scale}{\emph{PLoS Computational Biology} 12:e1004728, 2016}{DOI}{http://dx.doi.org/10.1371/journal.pcbi.1004728} {We demonstrate a new tool that enables---for the first time---massively parallel molecular simulation studies of biomolecular dynamics at the superfamily scale, illustrating its application to protein tyrosine kinases, an important class of drug targets in cancer.}
-
-\newarticle{automatic-equilibration-detection.pdf}{{\bf Chodera~JD}}{A simple method for automated equilibration detection in molecular simulations}{\emph{Journal of Chemical Theory and Computation} 12:1799, 2016}{DOI}{http://dx.doi.org/10.1021/acs.jctc.5b00784}{We present a simple approach to automatically determining the equilibrated region of a molecular simulation, a longstanding challenge formerly without a good solution.}
-
-\newarticle{thermoml-benchmark.pdf}{Beauchamp~KA, Behr~JM, Rustenburg~AS, Bayly~CI, Kroenlein~K, and {\bf Chodera~JD}. }{Towards automated benchmarking of atomistic forcefields: Neat liquid densities and static dielectric constants from the {ThermoML} data archive}{\emph{Journal of Physical Chemistry B} 199:12912, 2015}{DOI}{http://t.co/xhoJzSQKo0}{Molecular mechanics forcefields are critical to computer-guide drug design, but the benchmarking and improvement of these forcefields has been hindered by the lack of high-quality machine-readable physical property datasets. We show how the NIST-curated ThemoML Archive, which stores physical property data in an IUPAC-standard XML format, can eliminate these roadblocks and reveal issues with current generation forcefields.}
-
-\newarticle{L-2HG.pdf}{Intlekofer AM, Dematteo RG, Venetti S, Finley LWS, Lu Chao, Judkins AR, Rutenburg AS, Grinaway PB, {\bf Chodera JD}, Cross JR, and Thompson CB}{Hypoxia introduces production of {L-2-Hydroxyglutarate}}{\emph{Cell Metabolism} 22:1--8, 2015}{DOI}{http://dx.doi.org/10.1016/j.cmet.2015.06.023}{Molecular docking is used to demonstrate the potential for alternative substrate usage by isocitrate dehydrogenases under hypoxic conditions in cancer.}
-
-\newarticle{timestep-rescaling.pdf}{Sivak DA, {\bf Chodera JD}, and Crooks GE}{Time step rescaling recovers continuous-time dynamical properties for discrete-time Langevin integration of nonequilibrium systems}{\emph{Journal of Physical Chemistry B}, 118:6466--6474, 2014.  William C.~Swope Festschrift}{DOI}{http://dx.doi.org/10.1021/jp411770f}{We derive a simple, easy-to-implement Langevin integrator that has universally useful properties in molecular simulations.}
-
-\newarticle{spectral-rate-theory.pdf}{Prinz J-H, {\bf Chodera JD}, and No\'{e} F}{Spectral rate theory for two-state kinetics}{\emph{Physical Review X} 4:011020, 2014}{DOI}{http://dx.doi.org/10.1103/PhysRevX.4.011020}{We present a new mathematical framework for unifying various two-state rate theories presented in the physical chemistry literature over many decades, and provide a quantitative way to measure reaction coordinate quality.}
-
-\newarticle{identifying-ligand-binding-sites.pdf}{Wang K, {\bf Chodera JD}, Yang Y, and Shirts MR}{Identifying ligand binding sites and poses using GPU-accelerated Hamiltonian replica exchange molecular dynamics}{\emph{Journal of Computer Aided Molecular Design} 27:989--1007, 2013}{DOI}{http://dx.doi.org/10.1007/s10822-013-9689-8}{We show how bound ligand poses can be identified even when the location of the binding sites are unknown using the machinery of alchemical modern free energy calculations on graphics processors.}
-
-\newarticle{iamoeba-water}{Wang L-P, Head-Gordon TL, Ponder JW, Ren P, {\bf Chodera JD}, Eastman PK, Martinez TJ, and Pande VS}{Systematic improvement of a classical molecular model of water}{\emph{Journal of Physical Chemistry B} 117:9956--9972, 2013}{DOI}{http://dx.doi.org/10.1021/jp403802c}{Water is the most important molecule in biology, and accurate treatment of its interactions is critical to accurate modeling for drug discovery. While polarizable models of water can achieve very high accuracies, they are both difficult to parameterize and expensive to employ. Here, we show how a high quality inexpensive polarizable model of liquid water can be derived using an automated parameterization engine.}
-
-\newarticle{nonequilibrium-fluctuation-theorems}{Sivak DA, {\bf Chodera JD}, and Crooks GE}{Using nonequilibrium fluctuation theorems to understand and correct errors in equilibrium and nonequilibrium discrete Langevin dynamics simulations}{\emph{Physical Review X} 3:011007, 2013}{DOI}{http://dx.doi.org/10.1103/PhysRevX.3.011007}{All molecular dynamics simulations introduce error into the sampled distribution by virtue of the finite timestep used to integrate the equations of motion on a digital computer. While traditional approaches to analyzing this error are extremely complicated, we show how interpreting finite-timestep integrators as a form of nonequilibrium driving leads to simple, straightforward schemes for assessing the impact of these errors, as well as correcting for them.}
-
-\newarticle{openmm-logo.pdf}{Eastman P, Friedrichs MS, {\bf Chodera JD}, Radmer RJ, Bruns CM, Ku JP, Beauchamp KA, Lane TJ, Wang L, Shukla D, Tye T, Houston M, Stich T, Klein C, Shirts MR, and Pande VS}{OpenMM 4: A reusable, extensible, hardware independent library for high performance molecular simulation}{\emph{Journal of Chemical Theory and Computation} 9:461, 2012}{DOI}{http://dx.doi.org/10.1021/ct300857j}{Inexpensive consumer GPUs promise a 100-fold increase in simulation power by problems that can effectively exploit their highly specialized structure. Here, we describe the latest advances in an extremely high performance, open-source, extensible GPU-accelerated library and toolkit for molecular simulation.}
-
-\newarticle{constant-force-feedback.pdf}{Elms PJ, {\bf Chodera JD}, Bustamante CJ, Marqusee S}{The limitations of constant-force-feedback experiments}{\emph{Biophysical Journal} 103:1490, 2012}{DOI}{http://dx.doi.org/10.1016/j.bpj.2012.06.051}{Popular constant-force-feedback single-molecule experiments can cause severe artifacts in single-molecule force spectroscopy data.  We demonstrate a simple alternative that eliminates these artifacts.}
-
-\newarticle{molten-globule-state.pdf}{Elms PJ, {\bf Chodera JD}, Bustamante C, Marqusee S}{The molten globule state is unusually deformable under mechanical force}{\emph {Proceedings of the National Academy of Sciences} 109:3796, 2012}{DOI}{http://dx.doi.org/10.1073/pnas.1115519109}{We measure the physical properties of the molten globule state of apo-myoglobin, and show that it is unusually deformable compared to typical protein native states.}
-
-\newarticle{experimental-observables.pdf}{Pitera JW and {\bf Chodera JD}}{On the use of experimental observations to bias simulated ensembles}{\emph{Journal of Chemical Theory and Computation} 8:3445, 2012}{DOI}{http://dx.doi.org/10.1021/ct300112v}{We show how the concept of maximum entropy can be used to recover unbiased conformational distributions from experimental data, and how this concept relates to the popular `ensemble refinement' schemes for NMR data analysis.}
-
-\newarticle{ribosome-modulates.pdf}{Kaiser CM, Goldman DH, {\bf Chodera JD}, Tinoco I, Jr., and Bustamante C}{The ribosome modulates nascent protein folding}{\emph{Science} 334:1723, 2011}{DOI}{http://dx.doi.org/10.1126/science.1209740}{Using single-molecule force spectroscopy, we show how the ribosome itself modulates the folding dynamics of nascent protein chains emerging from the exit tunnel.}
-
-\newarticle{splitting-probabilities.pdf}{{\bf Chodera JD} and Pande VS}{Splitting probabilities as a test of reaction coordinate choice in single-molecule experiments}{\emph{Physical Review Letters} 107:098102, 2011}{DOI}{http://dx.doi.org/10.1103/PhysRevLett.107.098102}{We demonstrate a simple test for identifying poor reaction coordinates in single-molecule experiments.}
-
-\newarticle{itc-enthalpogram.pdf}{Tellinghuisen JT and {\bf Chodera JD}}{Systematic errors in isothermal titration calorimetry: Concentrations and baselines}{\emph{Analytical Biochemistry} 414:297, 2011}{DOI}{http://dx.doi.org/10.1016/j.ab.2011.03.024}{A word of caution about large errors in isothermal titration calorimetry measurements arising from ligand concentration errors.}
-
-\newarticle{multiple-time-slices.pdf}{Minh DDL, {\bf Chodera JD}}{Estimating equilibrium ensemble averages using multiple time slices from driven nonequilibrium processes: Theory and application to free energies, moments, and thermodynamic length in single-molecule pulling experiments}{\emph{Journal of Chemical Physics} 134:024111, 2011}{DOI}{http://dx.doi.org/10.1063/1.3516517}{We derive a new estimator for estimating equilibrium expectations from nonequilibrium experiments, and show how it can be used to estimate a variety of useful quantities in simulated single-molecule force spectroscopy experiments.}
-
-\newarticle{ncmc.pdf}{Nilmeier JP, Crooks GE, Minh DDL, and {\bf Chodera JD}}{Nonequilibrium candidate Monte Carlo is an efficient tool for equilibrium simulation}{\emph{Proceedings of the National Academy of Scienceis} 108:E1009, 2011}{DOI}{http://dx.doi.org/10.1073/pnas.1106094108}{We present a significant generalization of Monte Carlo methods that provide an enormously useful tool for enhancing the efficiency of molecular simulations and enabling molecular design.}
-
-\newarticle{parallel-tempering.pdf}{Prinz J-H, {\bf Chodera JD}, Pande VS, Smith JC, and No\'{e} F}{Optimal use of data in parallel tempering simulations for the construction of discrete-state Markov models of biomolecular dynamics}{\emph{Journal of Chemical Physics} 134:244108, 2011}{DOI}{http://dx.doi.org/10.1063/1.3592153}{We demonstrate how multitemperature data from parallel tempering simulations can be used to construct fully temperature-dependent models of the dynamics of biomolecular systems.}
-
-\newarticle{dynamical-reweighting.pdf}{{\bf Chodera JD}, Swope WC, No\'{e} F, Prinz J-H, Shirts MR, and Pande VS}{Dynamical reweighting: Improved estimates for dynamical properties from simulations at multiple temperatures}{\emph{Journal of Chemical Physics} 134:244107, 2011}{DOI}{http://dx.doi.org/10.1063/1.3592152}{We describe how reweighing techniques can provide optimal estimates of temperature-dependent dynamical properties from simulations conducted at multiple temperatures.}
-
-\newarticle{dynamical-fingerprints.pdf}{No\'{e} F, Doose S, Daidone I, L\"{o}llmann M, Sauer M, {\bf Chodera JD}, and Smith JC}{Dynamical fingerprints: A theoretical framework for understanding biomolecular processes by combination of simulation and kinetic experiments}{\emph{Proceedings of the National Academy of Sciences} 108:4822, 2011}{DOI}{http://dx.doi.org/10.1073/pnas.1004646108}{We present a new framework for comparing essential features of the dynamics between experiment and simulation to identify the kinetics processes contributing to individual relaxation timescales in perturbation-response or correlation spectroscopy experiments.}
-
-\newarticle{gibbs-sampling.pdf}{{\bf Chodera JD} and Shirts MR}{Replica exchange and expanded ensemble simulations as Gibbs sampling:\\ Simple improvements for enhanced mixing}{\emph{Journal of Chemical Physics} 135:194110, 2011}{DOI}{http://dx.doi.org/10.1063/1.3660669}{We show how a simple change to the way exchanges are handled in the popular replica-exchange simulation methodology can astronomically increase efficiency at no increase in computational cost.}
-
-\newarticle{current-status-amoeba.pdf}{Ponder JW, Wu C, Ren P, Pande VS, {\bf Chodera JD}, Mobley DL, Schnieders MJ, Haque I, Lambrecht DS, DiStasio RA Jr., Head-Gordon M,  Clark GNI, Johnson ME, and Head-Gordon T}{Current status of the AMOEBA polarizable force field}{\emph{Journal of Physical Chemistry B} 114:2549, 2010}{DOI}{http://dx.doi.org/10.1021/jp910674d}{The AMOEBA polarizable force field is able to reproduce a diverse set of physical chemical phenomenon to high accuracy.}
-
-\newarticle{observable-uncertainty.pdf}{{\bf Chodera JD} and No\'e F}{Probability distributions of molecular observables computed from Markov models.\\ II.~Uncertainties in observables and their time-evolution}{\emph{Journal of Chemical Physics} 133:105102, 2010}{DOI}{http://dx.doi.org/10.1063/1.3463406}{A simple Bayesian approach for the modeling of statistical uncertainties in kinetic and equilibrium quantities computed from Markov state models of biomolecular dynamics.}
-
-\newarticle{pcna-cover.pdf}{Adelman JL, {\bf Chodera JD}, Kuo IW, Miller TF, and Barsky D}{The mechanical properties of PCNA: Implications for the loading and function of a DNA sliding clamp}{\emph{Biophysical Journal} 98:3062, 2010}{DOI}{http://dx.doi.org/10.1016/j.bpj.2010.03.056}{Molecular simulations of the PCNA clamp responsible for DNA polymerase processivity show a surprisingly small energetic penalty for the deformation required for clamp loading.  Featured on issue cover.}
-
-\newarticle{bayesian-comparison-markov-models.pdf}{Bacallado S, {\bf Chodera JD}, and Pande VS}{Bayesian comparison of Markov models of molecular dynamics with detailed balance constraint}{\emph{Journal of Chemical Physics} 131:045106, 2009}{DOI}{http://dx.doi.org/10.1063/1.3192309}{A Bayesian scheme for comparing state space decompositions for Markov state models of biomolecular dynamics that incorporates the fact that physical systems must obey detailed balance.  This paper utilizes recent results from Markov chain theory on edge-reinforced random walks.}
-
-\newarticle{optimal-estimates-nonequilibrium.pdf}{Minh DDL, {\bf Chodera JD}}{Optimal estimators and asymptotic variances for nonequilibrium path-ensemble averages}{\emph{Journal of Chemical Physics} 131:134110, 2009}{DOI}{http://dx.doi.org/10.1063/1.3242285}{We derive an optimal estimator and corresponding statistical uncertainties for inferring expectations of bidirectional nonequilibrium processes.  These estimators have widespread applicability in single-molecule biophysical force-spectroscopy experiments and nonequilibrium molecular simulations.}
-
-\newarticle{mbar-equation.pdf}{Shirts MR, {\bf Chodera JD}}{Statistically optimal analysis of samples from multiple equilibrium states}{\emph{Journal of Chemical Physics} 129:124105, 2008}{DOI}{http://dx.doi.org/10.1063/1.2978177}{We present a highly general, statistically optimal approach for producing estimates of free energies and equilibrium expectations from multiple simulations that provably extracts all useful information from the data.}
-
-\newarticle{small-molecule-solvation.pdf}{Nicholls A*, Mobley DL*, Guthrie JP, {\bf Chodera JD}, and Pande VS}{Predicting small-molecule solvation free energies: A blind challenge test for computational chemistry}{\emph {Journal of Medicinal Chemistry} 51:769, 2008}{DOI}{http://dx.doi.org/10.1021/jm070549+}{A blind evaluation of the accuracy of alchemical free energy methods for computing gas-to-water transfer free energies (solvation free energies) of small molecules demonstrates that modern forcefields are likely sufficiently accurate to be useful in drug design.}
-
-\newarticle{entropy-solvation.pdf}{Mobley DL, Dill KA, and {\bf Chodera JD}}{Treating entropy and conformational changes in implicit solvent simulations of small molecules}{\emph{Journal of Physical Chemistry B} 112:938, 2008}{DOI}{http://dx.doi.org/10.1021/jp0764384}{An quantitative examination of how much conformational entropy contributes to hydration free energies of small molecules, with implications for ligand binding.}
-
-\newarticle{long-range-dispersion-correction.pdf}{Shirts MR*, Mobley DL*, {\bf Chodera JD}, and Pande VS}{Accurate and efficient corrections for missing dispersion interactions in molecular simulations}{\emph{Journal of Physical Chemistry B} 111:13052, 2007}{DOI}{http://dx.doi.org/10.1021/jp0735987}{We identify a major source of systematic error in absolute alchemical free energy calculations of ligand binding and show how a simple procedure can inexpensively and accurately eliminate it.}
-
-\newarticle{charge-models.pdf}{Mobley DL, Dumont E, {\bf Chodera JD}, Bayly CI, Cooper MD, and Dill KA}{Comparison of charge models for fixed-charge force fields: Small-molecule hydration free energies in explicit solvent}{\emph{Journal of Physical Chem B} 111:2242, 2007}{DOI}{http://dx.doi.org/10.1021/jp0667442}{We compare a number of popular methods for deriving charge models for small molecules, deriving lessons about best practices for accurate simulations.}
-
-\newarticle{t4-lysozyme-l99a.pdf}{Mobley DL, Graves AP, {\bf Chodera JD}, McReynolds AC, Shoichet BK, and Dill KA}{Predicting absolute ligand binding free energies to a simple model site}{\emph{Journal of Molecular Biology} 371:1118, 2007}{DOI}{http://dx.doi.org/10.1016/j.jmb.2007.06.002}{We show how alchemical free energy calculations are capable of accurate blind prediction of small-molecule binding affinities to a simple model protein binding site.}
-
-\newarticle{t4-lysozyme-val111}{Mobley DL, {\bf Chodera JD}, and Dill KA}{Confine-and-release method: Obtaining correct binding free energies in the presence of protein conformational change}{\emph{Journal of Chemical and Theoretical Computation} 3:1231, 2007}{DOI}{http://dx.doi.org/10.1021/ct700032n}{We present a general scheme for obtaining correct ligand binding affinities when protein conformational change is implicated in ligand binding.}
-
-\newarticle{automatic-state-decomposition-trpzip2.pdf}{{\bf Chodera JD}*, Singhal N*, Swope WC, Pitera JW, Pande VS, and Dill KA}{Automatic discovery of metastable states for the construction of Markov models of macromolecular conformational dynamics}{\emph{Journal of Chemical Physics} 126:155101, 2007}{DOI}{http://dx.doi.org/10.1063/1.2714538}{Proposing one of the first automated algorithms for discovering kinetically metastable states of biomolecules from molecular simulations, this paper shows how many biomolecules can possess numerous distinct long-lived conformational states even though the the equilibrium populations of these states may too small for standard structural biology techniques to detect.}
-
-\newarticle{zipping-assembly.pdf}{Ozkan SB, Wu GA, {\bf Chodera JD}, and Dill KA}{Protein Folding by Zipping and Assembly}{\emph{Proceedings of the National Academy of Sciences} 104:11987, 2007}{DOI}{http://dx.doi.org/10.1073/pnas.0703700104}{A review of the utility of the proposed zipping and assembly mechanism for the concomitant formation of secondary and tertiary structure in protein folding for predicting folding pathways and native structures.}
-
-\newarticle{alanine-dipeptide-2dpmf.pdf}{{\bf Chodera JD}, W. C. Swope, J. W. Pitera, C. Seok, and K. A. Dill}{Use of the weighted histogram analysis method for the analysis of simulated and parallel tempering simulations}{\emph{Journal of Chemical Theory and Computation} 3:26, 2007}{DOI}{http://dx.doi.org/10.1021/ct0502864}{The weighted histogram analysis method (WHAM), a mainstay of molecular dynamics simulation analysis, is thoroughly explained and modernized for the analysis of simulated and parallel tempering simulation data.}
-
-\newarticle{orientational-restraints.pdf}{Mobley DL, {\bf Chodera JD}, and Dill KA}{On the use of orientational restraints and symmetry corrections in alchemical free energy calculations}{\emph{Journal of Chemical Physics} 125:084902, 2006}{DOI}{http://dx.doi.org/10.1063/1.2221683}{We illustrate how orientational restraints can be used to greatly reduce the computational effort in alchemical calculations of ligand binding free energies, and clarify how symmetry corrections are necessary when molecules contain symmetric or pseudosymmetric substituents.}
-
-\newarticle{alanine-dipeptide.pdf}{{\bf Chodera JD}, Swope WC, Pitera JW, and Dill KA}{Long-time protein folding dynamics from short-time molecular dynamics simulations}{\emph{Multiscale Modeling and Simulation} 5:1214, 2006}{DOI}{http://dx.doi.org/10.1137/06065146X}{We show how the long-time dynamics of biomolecular systems can be recapitulated from statistics collected from short molecular simulations sampling transitions between kinetically metastable states.}
-
-\newarticle{moped.pdf}{Seok C, Rosen JB, {\bf Chodera JD}, Dill KA}{MOPED: Method for optimizing physical energy parameters using decoys}{\emph{Journal of Computational Chemistry} 24:89, 2003}{DOI}{http://dx.doi.org/10.1002/jcc.10124}{We propose a new way to optimize parameters for a physical energy function using decoy structures for protein folding studies.}
-
-\newarticle{odcase.pdf}{Lee TS$^*$, Chong LT$^*$, {\bf Chodera JD}, and Kollman PA}{An alternative explanation for the catalytic proficiency of orotidine 5'-phosphate decarboxylase}{\emph{Journal of the American Chemical Society} 123:12837, 2001}{DOI}{http://dx.doi.org/10.1021/ja011096f}{A combined QM and MD analysis of potential plausible mechanisms to explain the enormous catalytic acceleration of one of the most proficient enzymes known.}
-
-\eject
-%%%%%%%%%%%%
-
-\section*{Scientific Advisory Boards}
-
-\noindent\years{\scshape 2013--}Schr\"{o}dinger, LLC
-
-%%%%%%%%%%%%
-
-\section*{Conferences organized}
-
-\talk{Jan 2017}{Berkeley}[smml:2017] Statistical Mechanics // Machine Learning \\ {\small University of California, Berkeley, CA}\vspace{0.5ex}
-
-\talk{May 2016}{Boston}Free Energy Methods in Drug Design Workshop \\ {\small Vertex Pharmaceuticals, Boston, MA}\vspace{0.5ex}
-
-\talk{May 2016}{Cambridge, MA}Markov State Models in Drug Design Workshop \\ {\small Novartis, Cambridge, MA}\vspace{0.5ex}
-
-\talk{Sep 2015}{Berlin}World Molecular Kinetics Workshop 2015 \\ {\small Freie Universit\"{a}t Berlin, Germany} \vspace{0.5ex}
-
-\talk{May 2014}{Boston}Free Energy Methods in Drug Design Workshop \\ {\small Vertex Pharmaceuticals, Boston, MA}\vspace{0.5ex}
-
-\talk{Sep 2013}{Berlin}World Molecular Kinetics Workshop 2013 \\ {\small Freie Universit\"{a}t Berlin, Germany} \vspace{0.5ex}
-
-\talk{May 2012}{Cambridge, MA}Free Energy Methods in Drug Design Workshop \\ {\small Vertex Pharmaceuticals, Cambridge, MA}\vspace{0.5ex}
-
-\talk{Sep 2011}{Berlin}World Molecular Kinetics Workshop 2011 \\ {\small Freie Universit\"{a}t Berlin, Germany} \vspace{0.5ex}
-
-\talk{May 2010}{Cambridge, MA}Free Energy Methods in Drug Design Workshop \\ {\small Vertex Pharmaceuticals, Cambridge, MA}\vspace{0.5ex}
-
-\talk{May 2009}{Berlin}World Molecular Kinetics Workshop 2009 \\ {\small Freie Universit\"{a}t Berlin, Germany}
-
-%% TALKS
-
-%\section*{Invited presentations}
-%
-%\numberedtalk{Jul 2013}{Mount Snow, VT}Computer Aided Drug Discovery GRC\\ {\small Experimental (T)error: Strategies for coping with data in an uncertain world} \vspace{0.5ex}
-%
-%\numberedtalk{Jul 2013}{Snowmass, CO}Free energy workshop.\\ {\small Redesigning drug design} \vspace{0.5ex}
-%
-%\numberedtalk{Apr 2013}{Merced}Chemistry Departmental Seminar, UC Merced.\\ {\small Redesigning drug design} \vspace{0.5ex}
-%
-%\numberedtalk{Jan 2013}{College Park}Statistical Mechanics Seminar Series, University of Maryland.\\ {\small New applications of nonequilibrium fluctuation theorems in single-molecule biophysics and molecular simulation} \vspace{0.5ex}
-%
-%\numberedtalk{Sep 2012}{Marconi Center}UC Berkeley Biophysics Retreat.\\ {\small Redesigning drug design} \vspace{0.5ex}
-%
-%\numberedtalk{Sep 2012}{Skytop}MSKCC cBio Retreat.\\ {\small Redesigning drug design} \vspace{0.5ex}
-%
-%\numberedtalk{Sep 2012}{Zurich}CECAM Protein Folding Workshop, ETH Zurich.\\ {\small New techniques for extracting insight from single-molecule force spectroscopy} \vspace{0.5ex}
-%
-%\numberedtalk{Feb 2012}{Schr\"dingier}Schr\"{o}dinger, New York\\ {\small Redesigning drug design} \vspace{0.5ex}
-%
-%\numberedtalk{Feb 2012}{Berlin}Freie Universit\"{a}t Berlin, MATHEON\\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\numberedtalk{Jan 2012}{Berkeley}Physics Departmental Seminar, UC Berkeley \\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\numberedtalk{Jan 2012}{Berkeley}Berkeley Mini Stat Mech Meeting\\ {\small Unraveling the statistical mechanics of biomolecules with force spectroscopy} \vspace{0.5ex}
-%
-%\numberedtalk{Sep 2011}{Berlin}World Molecular Kinetics Workshop, Berlin\\ {\small New techniques for nonequilibrium force spectroscopy} \vspace{0.5ex}
-%
-%\numberedtalk{Aug 2011}{Johns Hopkins}Johns Hopkins University\\ {\small Toward multiscale modeling of the effects of small molecules on cellular pathways}\vspace{0.5ex}
-%
-%\numberedtalk{Mar 2011}{UCSF}University of California, San Francisco\\ {\small Pushing the boundaries of single-molecule force spectroscopy} \vspace{0.5ex}
-%
-%\numberedtalk{Jan 2011}{MIT}Physical Chemistry Seminar, MIT \\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\numberedtalk{Jul 2010}{New York}Schr\"{o}dinger, New York \\ {\small Alchemical free energy methods for drug discovery} \vspace{0.5ex}
-%
-%\numberedtalk{Jun 2010}{Edinburgh}Multiscale Molecular Modeling (M3) meeting, Edinburgh \\ {\small Optimal estimates of dynamical properties} \vspace{0.5ex}
-%
-%\eject
-%
-%\numberedtalk{Jan 2010}{Berkeley}Berkeley Mini Stat Mech Meeting, TPS Satellite Meeting, Berkeley \\ {\small Optimal estimation from multiple path sampling simulations} \vspace{0.5ex}
-%
-%\numberedtalk{Dec 2009}{Cambridge}Vertex Pharmaceuticals, Cambridge MA \\ {\small Entropy-enthalpy compensation: Not even wrong?} \vspace{0.5ex}
-%
-%\numberedtalk{Apr 2009}{Purdue}Purdue University\\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\numberedtalk{Apr 2009}{Notre Dame}University of Notre Dame\\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\numberedtalk{Apr 2009}{Berlin}Freie Universit\"{a}t Berlin, MATHEON\\ {\small Estimators for equilibrium and nonequilibrium experiments} \vspace{0.5ex}
-%
-%\numberedtalk{Mar 2009}{Miami}SIAM National Meeting, Miami\\ {\small } {\small Bridging between atomistic simulation and physical experiments with master equation models} \vspace{0.5ex}
-%
-%\numberedtalk{Feb 2009}{UCLA}IPAM Rare Events in High-Dimensional Systems, UCLA\\ {\small Bridging between atomistic simulation and physical experiments with master equation models}\vspace{0.5ex}
-%
-%\numberedtalk{Jul 2008}{Telluride}Telluride meeting on Enhanced Sampling Methods\\ {\small Statistically optimal estimates from multiple equilibrium samples} \vspace{0.5ex}
-%
-%\numberedtalk{Jun 2008}{Banff}BIRS Workshop on Mathematical Methods for Free Energy Calculations in Molecular Systems\\ {\small Statistically optimal estimates from equilibrium and nonequilibrium measurements} \vspace{0.5ex}
-%
-%\numberedtalk{Apr 2008}{Stanford}Gromacs Workshop, Stanford\\ {\small Alchemical free energy calculations with {\tt gromacs}}\vspace{0.5ex}
-%
-%\numberedtalk{Feb 2008}{Vienna}ESI Workshop on Metastability and Rare Events in Complex Systems, Vienna\\ {\small Master equation models of protein folding and dynamics from atomistic molecular dynamics simulation} \vspace{0.5ex}
-%
-%\numberedtalk{Aug 2007}{Boston}ACS National Meeting, Boston\\ {\small Bridging timescales between atomistic simulation and experiments} \vspace{0.5ex}
-%
-%%\numberedtalk{Mar 2007}{Chicago}ACS National Meeting\\ {\small Accuracy and reliability in molecular simulation. \emph{(Substituting for Vijay S. Pande)}} \vspace{0.5ex}
-%
-%\numberedtalk{Sep 2006}{Heidelberg}MMS06 Workshop, Heidelberg\\ {\small Describing peptide and protein folding dynamics by discrete-state master equation models} \vspace{0.5ex}
-%
-%\numberedtalk{Dec 2003}{San Diego}Burroughs Wellcome Fund, Interfaces in Science Program retreat, San Diego\\ {\small Constructing master equation models of protein dynamics from atomistic simulation} \vspace{0.5ex}
-%
-%\numberedtalk{Mar 2003}{New York}ACS National Meeting, New York\\ {\small Extracting dynamical information from parallel tempering simulations}
-%
-%%%%%%%%%%%
-
-%\talk{Sep 2011}{Berlin}World Molecular Kinetics Workshop\\ {\small New techniques for nonequilibrium force spectroscopy} \vspace{0.5ex}
-%
-%\talk{Aug 2011}{Johns Hopkins}Invited talk, Johns Hopkins University\\ {\small Toward multiscale modeling of the effects of small molecules on cellular pathways}\vspace{0.5ex}
-%
-%\talk{Mar 2011}{UCSF}Invited talk, UCSF\\ {\small Pushing the boundaries of single-molecule force spectroscopy} \vspace{0.5ex}
-%
-%\eject
-%
-%\talk{Jan 2011}{MIT}Physical Chemistry Seminar, MIT \\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\talk{Jul 2010}{New York}Invited talk, Schr\"{o}dinger \\ {\small Alchemical free energy methods for drug discovery} \vspace{0.5ex}
-%
-%\talk{Jun 2010}{Edinburgh}Multiscale Molecular Modeling (M3) meeting \\ {\small Optimal estimates of dynamical properties} \vspace{0.5ex}
-%
-%\talk{Jan 2010}{Berkeley}Berkeley Mini Stat Mech Meeting, TPS Satellite Meeting \\ {\small Optimal estimation from multiple path sampling simulations} \vspace{0.5ex}
-%
-%\talk{Dec 2009}{Boston}Vertex Pharmaceuticals \\ {\small Entropy-enthalpy compensation: Not even wrong?} \vspace{0.5ex}
-%
-%\talk{Apr 2009}{Purdue}Invited talk, Purdue University\\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\talk{Apr 2009}{Notre Dame}Invited talk, University of Notre Dame\\ {\small How do biomolecules move?} \vspace{0.5ex}
-%
-%\talk{Apr 2009}{Berlin}Freie Universit\"{a}t Berlin, MATHEON\\ {\small Estimators for equilibrium and nonequilibrium experiments} \vspace{0.5ex}
-%
-%\talk{Mar 2009}{Miami}SIAM National Meeting - State Space Decomposition Methods in Molecular Simulations\\ {\small } {\small Bridging between atomistic simulation and physical experiments with master equation models} \vspace{0.5ex}
-%
-%\talk{Feb 2009}{UCLA}IPAM Rare Events in High-Dimensional Systems\\ {\small Bridging between atomistic simulation and physical experiments with master equation models}\vspace{0.5ex}
-%
-%\talk{Jul 2008}{Telluride}Telluride meeting on Enhanced Sampling Methods \\ {\small Statistically optimal estimates from multiple equilibrium samples.} \vspace{0.5ex}
-%
-%\talk{Jun 2008}{Banff}BIRS Workshop on Mathematical Methods for Free Energy Calculations in Molecular Systems\\ {\small Statistically optimal estimates from equilibrium and nonequilibrium measurements.} \vspace{0.5ex}
-%
-%\talk{Apr 2008}{Stanford}Gromacs Workshop\\ {\small Alchemical free energy calculations with {\tt gromacs}}\vspace{0.5ex}
-%
-%\talk{Feb 2008}{Vienna}ESI Workshop on Metastability and Rare Events in Complex Systems\\ {\small Master equation models of protein folding and dynamics from atomistic molecular dynamics simulation} \vspace{0.5ex}
-%
-%\talk{Aug 2007}{Boston}ACS National Meeting\\ {\small Bridging timescales between atomistic simulation and experiments.} \vspace{0.5ex}
-%
-%%\talk{Mar 2007}{Chicago}ACS National Meeting\\ {\small Accuracy and reliability in molecular simulation. \emph{(Substituting for Vijay S. Pande)}} \vspace{0.5ex}
-%
-%\talk{Sep 2006}{Heidelberg}MMS06 Workshop\\ {\small Describing peptide and protein folding dynamics by discrete-state master equation models} \vspace{0.5ex}
-%
-%\talk{Dec 2003}{San Diego}Burroughs Wellcome Fund, Interfaces in Science Program retreat.\\ {\small Constructing master equation models of protein dynamics from atomistic simulation.} \vspace{0.5ex}
-%
-%\talk{Mar 2003}{New York}ACS National Meeting\\ {\small Extracting dynamical information from parallel tempering simulations.}
-%
-
-%\section*{Teaching experience}
-%
-%\noindent\years{\scshape 2013-}Faculty, Tri-Institutional Training Program in Computational Biology and Medicine (CBM)\\
-%\noindent\years{\scshape 2013-}Faculty, Tri-Institutional Training Program in Chemical Biology (TPCB)\\
-%\noindent\years{\scshape Fall 2006}MathBio Boot Camp, UCSF Biophysics. \\
-%\noindent\years{\scshape Fall 2003}Teaching Assistant, UCSF BP 206, Computation of Biological Molecules, Matthew P. Jacobson. \\
-%\noindent\years{\scshape Fall 2000}Teaching Assistant, UCSF Chem 241, Molecular Thermodynamics / Stat Mech, Ken A. Dill.
-
-%\section*{Research and Computing Grants}
-%
-%\noindent {\bf Astra-Zeneca iMED Collaboration Award} (2015--2016) \\
-%{\small Understanding slow off-rate inhibition in CK2 and SYK} 
-%
-%\noindent {\bf Functional Genomics Initiative (FGI) Award} (2015--2017) \\
-%{\small Characterization of cancer-derived mTOR mutants for precision therapeutics} 
-%
-%\noindent {\bf Functional Genomics Initiative (FGI) Rapid Response Award} (2015--2016) \\
-%{\small Assessing the biophysical impact of clinical kinase mutations on drug binding affinity} 
-%
-%\noindent {\bf Starr Cancer Foundation} (2015--2016) \\
-%{\small co-PIs: Minkui Luo (MSKCC)} 
-%
-%\noindent {\bf Louis V.~Gerstner Young Investigator Award} (2013--2016)
-%
-%\noindent {\bf INCITE Allocation for ORNL TITAN} (2014--2015) \\
-%{\small co-PIs: Jeremy Smith (ORNL/UT); Jeome Baudry (ORNL/UT)} \\
-%{\small Targeting Ras with allosteric modulators using the ORNL TITAN supercomputer} 
-%
-%\noindent {\bf Louis V.~Gerstner Young Investigator Award} (2013--2016) 
-%
-%\noindent {\bf Google Exacycle Grant for Visiting Faculty} (2013--2014) \\
-%{\small Over 100 million core-hours to benchmark accuracies for protein-small molecule binding free energy computation.} 
-%
-%\noindent {\bf Teragrid large-scale allocation on NCSA Lincoln} (2010, renewed 2011) \\
-%{\small 1.3 million service units in 2011. Grant number TG-MCB100015.} \\
-%{\small co-PIs: Michael R. Shirts (University of Virginia); David L. Mobley (University of New Orleans)} \\
-%{\small GPU-accelerated calculation of ligand binding affinities to biological macromolecules}
-
-%\section*{Community software and resources}
-%
-%\noindent {\bf Co-editor}, alchemistry.org. \href{http://www.alchemistry.org}{http://www.alchemistry.org}\\
-%{\small A community site for alchemical free energy calculations.} \\
-%\noindent {\bf Developer}, pyMBAR. \href{http://www.simtk.org/home/pymbar}{http://www.simtk.org/home/pymbar}.\\
-%{\small A free Python implementation of the multistate Bennett acceptance ratio (MBAR) estimator for analysis of computer simulations and single-molecule experiments.} \\
-%\noindent {\bf Developer}, MMTOOLS. \href{http://www.simtk.org/home/mmtools}{http://www.simtk.org/home/mmtools} \\
-%{\small A toolkit for automated simulation setup and interoperability.} \\
-%\noindent {\bf Developer}, YANK. \href{http://www.simtk.org/home/yank}{http://www.simtk.org/home/yank}\\
-%{\small A GPU-enabled code for alchemical binding free energy calculations.}\\
-%\noindent {\bf Developer}, BHMM. \href{http://www.simtk.org/home/bhmm}{http://www.simtk.org/home/bhmm}.\\
-%{\small A Bayesian hidden Markov model (BHMM) analysis Matlab toolkit for single-molecule experiments.} \\
-%\noindent {\bf Developer}, Bayesian ITC. \href{http://www.simtk.org/home/bayesian-itc}{http://www.simtk.org/home/bayesian-itc}\\
-%{\small A Python-based Bayesian analysis package for isothermal titration calorimetry (ITC) experiments.}\\
-%%\vspace{1cm}
-
-\section*{Software production}
-
-\section*{Peer reviewer for scientific journals}
-
-\small
-Bioinformatics
-
-Biopolymers
-
-Chemical Physics
-
-European Biophysics Journal
-
-International Journal of Molecular Sciences
-
-Journal of the American Chemical Society
-
-Journal of Chemical Theory and Computation
-
-Journal of Computer-Aided Molecular Design
-
-Journal of Computational Chemistry
-
-Journal of Computational Physics
-
-Journal of Physical Chemistry
-
-Journal of Physical Chemistry Letters
-
-Journal of the American Chemical Society
-
-Molecular Physics
-
-Nature Physics
-
-Nature Communications
-
-Pacific Symposium in Biocomputing
-
-PLoS Computational Biology
-
-PLoS One
-
-Proceedings of the National Academy of Sciences
-
-Structure
-
-\normalsize
+% \eject
 
 \vfill{}
 \hrulefill
 
-% FILL IN THE FULL URL TO YOUR CV
+% credits to Chodera's template
 \begin{center}
-{\footnotesize 
-The template for this CV is forked from \href{https://github.com/jchodera/latex-cv}{https://github.com/jchodera/latex-cv}}
+{\scriptsize
+The \LaTeX{} template for this CV is forked from \href{https://github.com/jchodera/latex-cv}{https://github.com/jchodera/latex-cv}}
 \end{center}
 
 \end{document}
