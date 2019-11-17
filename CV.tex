@@ -72,7 +72,7 @@
 \newcommand{\newarticle}[7]{
 \begin{adjustwidth}{-1in}{-1in}  
 \begin{tabular}{p{0.9in}p{7in}}
-\parbox[c]{0.9in}{\includegraphics[width=0.9in]{thumbnails/{#1}}} & \parbox[c]{6in}{\setstretch{0.9} {\scriptsize {#2}} \\ {\bf #3}  \\ {\small #4} $\cdot$ \href{#6}{#5} \\ {\footnotesize\emph {#7}}}
+\parbox[c]{0.9in}{\includegraphics[width=0.9in]{thumbnails/#1}} & \parbox[c]{6in}{\setstretch{0.9} {\scriptsize {#2}} \\ {\bf #3}  \\ {\small #4} $\cdot$ \href{#6}{#5} \\ {\footnotesize\emph {#7}}}
 \end{tabular}
 \end{adjustwidth}
 \vspace{0.2in}
@@ -225,6 +225,7 @@ CNPq Scientific Initiation Fellowship - Advisor: Dr. Leonardo P. Maia
 % \noindent\years{2012--2012}CNPq Scientific Initiation Fellowship
 
 \section*{Awards}
+\noindent\years{2019}{\textbf{3rd place} in the best poster award at the XX Simp\'osio Brasileiro de Qu\'imica Te\'orica.} \\
 \noindent\years{2017}{\textbf{Best poster} award at the XIX Simp\'osio Brasileiro de Qu\'imica Te\'orica.} \\
 \noindent\years{2015}{\textbf{Honorable mention} at the best poster award of the II Workshop on Biomolecular Theory-Experiment Interplay.}
 
@@ -247,7 +248,7 @@ All these methods form a useful toolset that can be used to investigate matter i
 \section*{Computational Skills}
 I am proficient with the programming languages (from more to less proficient): Fortran (legacy and modern), C, Python, C++ and Bash. I have experience with OpenMP parallelization, code profiling and optimization, and also have knowledge in message passaging parallelization with MPI and GPU and shared memory parallelization with OpenACC. I know how to use the Git and SVN version control systems.
 
-Concerning scientific software, I am familiar with DICE, GOTNano and GROMACS. For electronic structure calculations I have used Gaussian and FHI-AIMS.
+Concerning scientific software, I am familiar with DICE, GOTNano and GROMACS for molecular simulation. For electronic structure calculations I have used Gaussian and FHI-AIMS.
 
 % \setstretch{1.00} 
 
@@ -259,7 +260,7 @@ Concerning scientific software, I am familiar with DICE, GOTNano and GROMACS. Fo
 \section*{Software development}
 Apart from several scripts and smaller software, my major contributions are developing:\\
 
-\newsoftware{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE}{A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules. The code is written in Fortran and has OpenMP parallelization.}
+\newsoftware{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE}{A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules. I have also implemented shared memory parallelization and improved the overall performance. The code is written in Fortran and has OpenMP parallelization.}
 
 \newsoftware{Rondina GG, \textbf{Cezar HM}, Da Silva JLF}{GOTNano}{A code for global optimization and sampling of thermodynamic properties of nanoclusters. My main contribution is the implementation of the Parallel Tempering Monte Carlo algorithm used to sample the thermodynamic properties. The code is written in C and has OpenMP parallelization.}
 
@@ -275,7 +276,7 @@ Apart from several scripts and smaller software, my major contributions are deve
 
 %%%%%%%%%%%%
 
-\textit{h-index: 3, citations: 16 (29 Aug 2019)} \\
+\textit{h-index: 3, citations: 17 (16 Nov 2019)} \\
 \href{https://publons.com/researcher/2003548/}{Publons}, 
 \href{https://scholar.google.com.br/citations?hl=pt-BR&user=LtBk3gEAAAAJ}{Google Scholar} 
 
@@ -293,8 +294,8 @@ Apart from several scripts and smaller software, my major contributions are deve
 
 \newarticle{alloys_douglas.pdf}{De Souza DG, \textbf{Cezar HM}, Rondina GG, De Oliveira MF, Da Silva JLF}{A Basin-hopping Monte Carlo Investigation of the Structural and Energetic Properties of 55- and 561-atom Bimetallic Nanoclusters: the Examples of the ZrCu, ZrAl, and CuAl Systems}{\emph{Journal of Physics: Condensed Matter} 28:175302, 2016}{DOI}{http://dx.doi.org/10.1088/0953-8984/28/17/175302}{We report a basin-hopping Monte Carlo investigation of the structural and energetic properties of bimetallic ZrCu, ZrAl, and CuAl nanoclusters with 55 and 561 atoms, showing how the atoms of the different species are distributed in the structure, and a trend of more spherical structures at 50-50 compositions.}
 
-\subsection*{Submitted}
-\newarticle{ptmc_pt_alloys.png}{\textbf{Cezar HM}, Rondina GG, Da Silva JLF}{Thermodynamic Properties of 55-Atom Pt-based Nanoalloys: Phase Changes and Structural Effects on the Electronic Properties}{Journal of Chemical Physics}{}{}{We investigate the effects of temperature on the structure of Pt-based nanoalloys, performing Parallel Tempering Monte Carlo simulations using many-body potentials and DFT calculations to see how the structural changes affect the density of states.}
+\subsection*{Accepted for publication}
+\newarticle{ptmc_pt_alloys.png}{\textbf{Cezar HM}, Rondina GG, Da Silva JLF}{Thermodynamic Properties of 55-Atom Pt-based Nanoalloys: Phase Changes and Structural Effects on the Electronic Properties}{\emph{Journal of Chemical Physics}}{}{}{We investigate the effects of temperature on the structure of Pt-based nanoalloys, performing Parallel Tempering Monte Carlo simulations using many-body potentials and DFT calculations to see how the structural changes affect the density of states.}
 
 \subsection*{In preparation}
 I have 3 manuscripts in different steps of preparation, of which I highlight 2 that are under the review of the coauthors and should be submitted in the next weeks.
@@ -305,6 +306,8 @@ I have 3 manuscripts in different steps of preparation, of which I highlight 2 t
 \newarticle{dha-vhf.png}{Cardenuto MH, \textbf{Cezar HM}, Mikkelsen KV, Sauer SPA, Coutinho K, Canuto S.}{A QM/MM study of the absorption spectra of DHA/VHF photochromic switches in acetonitrile solution}{}{}{}{The absorption spectra of photoswichtes composed of two units of photochromic molecules, namely, dihydroazulene (DHA)/vinylheptafulvene(VHF) is studied including explicit solvation and considering the rotamers that are exhibited at room temperature.}
 
 \section*{Invited and contributed talks}
+\talk{Sep 2019}{S\~ao Carlos, SP}\textbf{DICEtools and Clustering-Traj: From simulation setup to data analysis} \\ III New Energies Innovation Center - Computational Material Science Division Workshop\\[0.05in]
+
 \talk{Feb 2019}{S\~ao Carlos, SP}\textbf{Monte Carlo Methods} \\ II New Energies Innovation Center - Computational Material Science Division Workshop (Invited talk)\\[0.05in]
 
 \talk{Sep 2018}{Bras\'ilia, DF}\textbf{Comparison Between Configurational Bias Monte Carlo and Molecular Dynamics Sampling for Sampling Conformational Stability with High Energy Barriers} \\ VII SeedMol  \\[0.05in]
@@ -321,6 +324,8 @@ Brazil) \\[0.05in]
 
 
 \section*{Poster presentation}
+\talk{Nov 2019}{Jo\~ao Pessoa, PB}\textbf{Conformational effects on the solvatochromism of mesityl oxide: the importance of an ergodic sampling} \\ XX SBQT \\[0.05in]
+
 \talk{Feb 2019}{S\~ao Carlos, SP}\textbf{Application of Configurational Bias Monte Carlo method for the simulation of dyes and porous nanoparticles} \\ II New Energies Innovation Center - Computational Material Science Division Workshop \\[0.05in]
 
 \talk{Oct 2018}{S\~ao Carlos, SP}\textbf{Implementation of Configurational Bias Monte Carlo method for the simulation of flexible molecules in solution} \\ I New Energies Innovation Center - Computational Material Science Division Workshop \\[0.05in]
