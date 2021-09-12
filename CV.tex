@@ -33,6 +33,7 @@
 
 \usepackage{chngpage}
 \usepackage[export]{adjustbox}
+\usepackage{mhchem}
 
 \usepackage{sidecap}
 \usepackage[abs]{overpic}
@@ -170,7 +171,7 @@
 %\Large CONTACT
 %%\includegraphics[width=0.7in,valign=c]{images/john_chodera_sm.pdf}
 \hspace{35pt}
-\includegraphics[width=1.3in,valign=c]{images/henrique.jpg}
+\includegraphics[width=1.3in,valign=c]{images/henrique2.jpg}
 \end{minipage}
 %\quad
 \begin{minipage}[t]{3in}
@@ -199,6 +200,9 @@ S\~ao Paulo, SP, 05508-090}
 
 \section*{Education and positions}
 
+\noindent\years{2020--}\textbf{Postdoctoral researcher, Institute of Physics, University of S\~ao Paulo}\\
+Computational nanofluidics studies on the confinement effects on fluid-solid interfaces.\\
+FAPESP Fellowship - Supervisor: Dr. Caetano R. Miranda \\
 \noindent\years{2018--2019}\textbf{Postdoctoral researcher, Institute of Physics, University of S\~ao Paulo}\\
 Development and applications of Configurational Bias Monte Carlo Method in dyes of interest to organic solar cells \\
 CAPES Fellowship - Supervisor: Dr. Kaline R. Coutinho \\
@@ -225,30 +229,35 @@ CNPq Scientific Initiation Fellowship - Advisor: Dr. Leonardo P. Maia
 % \noindent\years{2012--2012}CNPq Scientific Initiation Fellowship
 
 \section*{Awards}
-\noindent\years{2019}{\textbf{3rd place} in the best poster award at the XX Simp\'osio Brasileiro de Qu\'imica Te\'orica.} \\
+\noindent\years{2020}{\textbf{Top Downloaded Paper}: ``Solvent effect on the syn/anti conformational stability: A comparison between conformational bias Monte Carlo and molecular dynamics methods'', Wiley.} \\
+\noindent\years{2019}{\textbf{3rd place} in the best flash talks award at the XX Simp\'osio Brasileiro de Qu\'imica Te\'orica.} \\
 \noindent\years{2017}{\textbf{Best poster} award at the XIX Simp\'osio Brasileiro de Qu\'imica Te\'orica.} \\
+\noindent\years{2017}{\textbf{Among the 12 finalists} of the ``My Thesis in 180 Seconds'', organized by Swissnex Brazil.} \\
 \noindent\years{2015}{\textbf{Honorable mention} at the best poster award of the II Workshop on Biomolecular Theory-Experiment Interplay.}
 
 \section*{Teaching Experience}
-\noindent\years{2019}{\textbf{F\'isica II}: Teaching the second semester physics class at the Escola Polit\'ecnica of the University of S\~ao Paulo.} \\
-\noindent\years{2019}{\textbf{F\'isica I}: Teaching the first semester physics class at the Escola Polit\'ecnica of the University of S\~ao Paulo.} \\
+\noindent\years{2019}{\textbf{F\'isica II}: Teacher for the second semester physics class at the Escola Polit\'ecnica of the University of S\~ao Paulo.} \\
+\noindent\years{2019}{\textbf{F\'isica I}: Teacher for the first semester physics class at the Escola Polit\'ecnica of the University of S\~ao Paulo.} \\
 \noindent\years{2017}{\textbf{F\'isica Moderna I}: Teaching assistant for the introductory modern physics class of the Physics course of University of S\~ao Paulo, under the supervision of Prof. Dr. Sylvio Canuto.}
 
 
 \section*{Research overview}
-My research is mainly focused on the development of algorithms and computer code to efficiently sample properties of systems with intricate potential energy surfaces.
-Specifically, I have experience implementing and using Monte Carlo methods and extended ensemble methods such as replica exchange.
+My research is mainly focused on the development of algorithms for classical molecular simulation. 
+Specifically, I have experience implementing and using Monte Carlo methods and using molecular dynamics for the simuation of solute-solvent and interface systems.
 During my Master I have implemented a parallel tempering Monte Carlo algorithm with several options in GOTNano, and have used this same software, together with FHI-aims, to investigate the properties of nanoclusters.
 In my PhD I developed a Configurational Bias Monte Carlo method for the efficient simulation of flexible molecules in solution, showing that the method may perform better than standard molecular dynamics for the sampling of systems with high energy barriers between conformers.
 
 Even though most of my research has been in developing and implementing computational methods, I also have interest in combining different techniques to solve problems in physical chemistry and materials science.
-In my career I have used different methods such as molecular dynamics for the simulation of molecular systems, global optimization algorithms to search for the putative global minimum configurations, clustering algorithms to analyze data from simulation and density functional theory to investigate the electronic structure and absorption spectra of molecules and transition metal nanoclusters.
-All these methods form a useful toolset that can be used to investigate matter in the solid, liquid and gas phases.
+In my career I have used different methods such as molecular dynamics for the simulation of molecular systems, global optimization algorithms to search for the putative global minimum configurations, clustering algorithms to analyze data from simulation, fitting of interatomic potentials and density functional theory to investigate the electronic structure and absorption spectra of molecules and transition metal nanoclusters.
+All these methods form a useful toolset that can be used to investigate matter in the solid, liquid and gas phases, as well as its interfaces.
+
+In my most recent project, I have been using Grand Canonical Monte Carlo and molecular dynamics to investigate confinement effects on gas-solid and fluid-solid interfaces.
+Some of my efforts have been in validating and fitting interatomic potentials for these simulations.
 
 \section*{Computational Skills}
-I am proficient with the programming languages (from more to less proficient): Fortran (legacy and modern), C, Python, C++ and Bash. I have experience with OpenMP parallelization, code profiling and optimization, and also have knowledge in message passaging parallelization with MPI and GPU and shared memory parallelization with OpenACC. I know how to use the Git and SVN version control systems.
+I am proficient with the programming languages (from more to less proficient): Fortran (legacy and modern), Python, C, Bash and C++. I have experience with OpenMP parallelization, code profiling and optimization. I also have some knowledge in message passaging parallelization with MPI and GPU and shared memory parallelization with OpenACC, even though I haven't used those in a production environment. I know how to use the Git and SVN version control systems.
 
-Concerning scientific software, I am familiar with DICE, GOTNano and GROMACS for molecular simulation. For electronic structure calculations I have used Gaussian and FHI-AIMS.
+Concerning scientific software, I am familiar with DICE, GOTNano, Cassandra, GROMACS and LAMMPS for molecular simulation. For electronic structure calculations I have used Gaussian, FHI-AIMS and Quantum Espresso.
 
 % \setstretch{1.00} 
 
@@ -260,13 +269,17 @@ Concerning scientific software, I am familiar with DICE, GOTNano and GROMACS for
 \section*{Software development}
 Apart from several scripts and smaller software, my major contributions are developing:\\
 
-\newsoftware{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE}{A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules. I have also implemented shared memory parallelization and improved the overall performance. The code is written in Fortran and has OpenMP parallelization.}
+\newsoftware{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE}{\href{https://portal.if.usp.br/dice}{https://portal.if.usp.br/dice} \\ A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules. I have also implemented shared memory parallelization and improved the overall performance. The code is written in Fortran and has OpenMP parallelization.}
 
 \newsoftware{Rondina GG, \textbf{Cezar HM}, Da Silva JLF}{GOTNano}{A code for global optimization and sampling of thermodynamic properties of nanoclusters. My main contribution is the implementation of the Parallel Tempering Monte Carlo algorithm used to sample the thermodynamic properties. The code is written in C and has OpenMP parallelization.}
 
 \newsoftware{\textbf{Cezar HM}}{Clustering Trajectory}{\href{https://github.com/hmcezar/clustering-traj}{https://github.com/hmcezar/clustering-traj} \\ A parallel Python script that performs clustering over an atomistic molecular simulation trajectory, searching for the minimum RMSD between each structure and using one of the many clustering algorithms available in the machine learning library sklearn.}
 
 \newsoftware{\textbf{Cezar HM}}{DICEtools}{\href{https://github.com/hmcezar/dicetools}{https://github.com/hmcezar/dicetools} \\ A package containing several scripts used to prepare DICE inputs and analyze simulation data.}
+
+\newsoftware{\textbf{Cezar HM}}{pdb2lmp}{\href{https://github.com/Sampa-USP/pdb2lmp}{https://github.com/Sampa-USP/pdb2lmp} \\ Create LAMMPS topologies from structure files.}
+
+\newsoftware{\textbf{Cezar HM}}{nanotube-tools}{\href{https://github.com/Sampa-USP/nanotube-tools}{https://github.com/Sampa-USP/nanotube-tools} \\ Set of tools to manipulate, create and characterize nanotubes.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PUBLICATIONS
@@ -276,7 +289,7 @@ Apart from several scripts and smaller software, my major contributions are deve
 
 %%%%%%%%%%%%
 
-\textit{h-index: 3, citations: 22 (17 Mar 2020)} \\
+\textit{h-index: 5, citations: 69 (September 12th, 2021)} \\
 \href{https://publons.com/researcher/2003548/}{Publons}, 
 \href{https://scholar.google.com.br/citations?hl=pt-BR&user=LtBk3gEAAAAJ}{Google Scholar} 
 
@@ -287,6 +300,10 @@ Apart from several scripts and smaller software, my major contributions are deve
 %%%%%%%%%%%%
 
 \subsection*{Published}
+
+\newarticle{dha-vhf.png}{Cardenuto MH, \textbf{Cezar HM}, Mikkelsen KV, Sauer SPA, Coutinho K, Canuto S}{A QM/MM study of the conformation stability and electronic structure of the photochromic switches derivatives of DHA/VHF in acetonitrile solution}{\emph{Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy} 251:119434, 2021}{DOI}{https://doi.org/10.1016/j.saa.2021.119434}{The absorption spectra of photoswichtes composed of two units of photochromic molecules, namely, dihydroazulene (DHA)/vinylheptafulvene(VHF) is studied including explicit solvation and considering the rotamers that are exhibited at room temperature. We obtain the free energies and perform clustering analysis, rationalizing the absorption spectra at the different solvents.}
+
+\newarticle{cbmc_dice.png}{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE: A Monte Carlo code for molecular simulation including Configuration Bias Monte Carlo method}{\emph{Journal of Chemical Information and Modeling} 60:3472, 2020}{DOI}{https://doi.org/10.1021/acs.jcim.0c00077}{We describe DICE, a software that uses Monte Carlo methods to perform molecular simulation, focusing on solute-solvent systems. We introduce our implementation of the Configurational Bias Monte Carlo method that includes new methodological developments and employ the method to study different molecules such as alkanes, 1,2-dichloroethane and a large boron phtalocyanine.}
 
 \newarticle{mox_spectroscopy.png}{\textbf{Cezar HM}, Canuto S, Coutinho K}{Understanding the Absorption Spectrum of Mesityl Oxide Dye in Solvents of Different Polarities}{\emph{Journal of Molecular Liquids} 307:112924, 2020}{DOI}{https://doi.org/10.1016/j.molliq.2020.112924}{We investigate the conformational and solvent effects on the UV/vis spectroscopy of the mesityl oxide dye. We show that a correct description of the \textit{syn}/\textit{anti} population and the use of explicit solvent molecules is fundamental to describe the solvatochromic shifts.}
 
@@ -301,15 +318,18 @@ Apart from several scripts and smaller software, my major contributions are deve
 % \subsection*{Accepted for publication}
 
 \subsection*{Under review}
-\newarticle{cbmc_dice.png}{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE: A Monte Carlo code for molecular simulation including Configuration Bias Monte Carlo method}{\emph{Journal of Chemical Information and Modeling}}{}{}{We describe DICE, a software that uses Monte Carlo methods to perform molecular simulation, focusing on solute-solvent systems. We introduce our implementation of the Configurational Bias Monte Carlo method that includes new methodological developments.}
+\newarticle{dpbimH.png}{Franco LR, Toledo KCF, Matias TA, Benavides PA, \textbf{Cezar HM}, Araujo CMG, Coutinho K, Araki K}{Unraveling the acid-base characterization and solvent effects on structural and electronic properties of a bis-bidentated bridging ligand}{\emph{Physical Chemistry Chemical Physics}}{}{}{We report a combined theoretical-experimental study of the bis(2-pyridyl)-bis-imidazole in solution, determining the protonation sites, most favorable conformations and absorption spectra in different solvents.}
+
 
 \subsection*{In preparation}
-I have 3 manuscripts in different steps of preparation, of which I highlight the two manuscripts below that are under the review of the coauthors and should be submitted in the next weeks.
+I have 5 manuscripts in different steps of preparation, of which I highlight the three manuscripts below that are under the review of the coauthors and should be submitted in the next weeks.
 \\
+\newarticle{cnt_gas_potential.png}{\textbf{Cezar HM}, Lanna TD, Damasceno DA, Kirch A, Miranda CR}{Revisiting greenhouse gases adsorption in carbon nanostructures: advances
+through a combined first-principles and molecular simulation approach}{}{}{}{We investigate the adsorption properties of \ce{CH4} and \ce{CO2} in carbon nanotubes (CNTs) using different force fields within the Lorentz-Berthelot combining rules. Using density functional theory we found that the adsorption energies are underestimated for all the force fields. We fitted new cross Lennard-Jones parameters and investigated the effects of the different parametrization in the adsorption properties using Grand Canonical Monte Carlo.}
 
-\newarticle{dha-vhf.png}{Cardenuto MH, \textbf{Cezar HM}, Mikkelsen KV, Sauer SPA, Coutinho K, Canuto S}{A QM/MM study of the absorption spectra of DHA/VHF photochromic switches in acetonitrile solution}{}{}{}{The absorption spectra of photoswichtes composed of two units of photochromic molecules, namely, dihydroazulene (DHA)/vinylheptafulvene(VHF) is studied including explicit solvation and considering the rotamers that are exhibited at room temperature.}
+\newarticle{nbzr_stbs.png}{Salvador CAF, \textbf{Cezar HM}, Miranda CR}{Atomistic simulations of symmetric tilt grain boundaries in Nb-1Zr alloys}{}{}{}{We investigate the mechanical properties of three different symmetric tilt grain boundaries (STBs) at the \ce{Nb-1Zr} at.\% compositions. Using non equilibrium molecular dynamics simulations and Monte Carlo moves, we obtain that the \ce{Zr} stays at the grain boundray, and the addition of small amounts of \ce{Zr} can help pin the STBs. We also analyze the stress-strain curves and fracture patterns.}
 
-\newarticle{dpbimH.png}{Toledo KCF, Franco LR, Matias TA, Benavides PA, \textbf{Cezar HM}, Araujo CMG, Coutinho K, Araki K}{Understanding the structure and electronic properties of bis(2-pyridyl)-benzo-bis(imidazole) by theoretical-experimental approach}{}{}{}{We report a combined theoretical-experimental study of the bis(2-pyridyl)-bis-imidazole in solution, determining the protonation sites and conformations in different solvents.}
+\newarticle{sio2_nts.png}{\textbf{Cezar HM}, Miranda CR}{Water adsorption in ultrathin silica nanotubes}{}{}{}{We investigate the structure and adsorption properties for three sizes of \ce{SiO2} nanotubes. We consider some of the most used force fields for describing silica and compare the nanotube structures with density functional theory and water adsorption properties by comparison with experimental silicalite results. Finally, we report water adsorption isotherms for the nanotubes and rationalize the confinement effects looking at the accessible volume of each nanotube.}
 
 \section*{Invited and contributed talks}
 \talk{Sep 2019}{S\~ao Carlos, SP}\textbf{DICEtools and Clustering-Traj: From simulation setup to data analysis} \\ III New Energies Innovation Center - Computational Material Science Division Workshop\\[0.05in]
@@ -330,6 +350,9 @@ Brazil) \\[0.05in]
 
 
 \section*{Poster presentation}
+\talk{Feb 2021}{Online}\textbf{Revisiting greenhouse gases adsorption in carbon nanotubes:
+advances by ab initio optimized potentials} \\ 20th International Workshop on Computational Physics and Materials Science: Total Energy and Force Methods \\[0.05in]
+
 \talk{Nov 2019}{Jo\~ao Pessoa, PB}\textbf{Conformational effects on the solvatochromism of mesityl oxide: the importance of an ergodic sampling} \\ XX SBQT \\[0.05in]
 
 \talk{Feb 2019}{S\~ao Carlos, SP}\textbf{Application of Configurational Bias Monte Carlo method for the simulation of dyes and porous nanoparticles} \\ II New Energies Innovation Center - Computational Material Science Division Workshop \\[0.05in]
