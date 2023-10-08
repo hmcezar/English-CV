@@ -184,7 +184,6 @@
 \parbox[t]{3.0in}{
   Hylleraas Centre for Quantum Molecular Sciences\\
   and Department of Chemistry, \\
-  Room V208, \\
   University of Oslo, \\
   PO Box 1033 Blindern, 0315 Oslo, Norway}
 \end{tabular}
@@ -258,22 +257,19 @@ During my Master I have implemented a parallel tempering Monte Carlo algorithm i
 In my PhD I developed a Configurational Bias Monte Carlo method for the efficient simulation of flexible molecules in solution, and implemented it in DICE, showing that the method may perform better than standard molecular dynamics for the sampling of systems with high energy barriers between conformers.
 More recently, I have been maintaining Hylleraas MD, a Hamiltonian hybrid particle-field software, in which I have implemented a interface with PLUMED.
 I have also given contributions to PLUMED development regarding the implementation of small angle neutron scattering (SANS) and the Python MPI interface.
-
-Even though most of my research has been in developing and implementing computational methods, I also have an interest in combining different techniques to solve problems in physical chemistry and materials science.
 In my career I have used methods such as molecular dynamics for the simulation of molecular systems, global optimization algorithms to search for the putative global minimum configurations, clustering algorithms to analyze data from simulations, fitting of interatomic potentials, and density functional theory to investigate the electronic structure and absorption spectra of molecules and transition metal nanoclusters.
-Combined, these methods provide a set of tools that can be used to investigate matter in the solid, liquid, and gas phases, as well as its interfaces.
 
-In my recent projects, besides method development, I have been employing metainference, a Bayesian inference method, to bias coarse-grain simulations towards agreement with small angle scattering spectra in collaboration with experimentalists.
+Recently, I have been employing metainference, a Bayesian inference method, to bias coarse-grain simulations towards agreement with small angle scattering spectra in collaboration with experimentalists.
 
 I'm also leading a project to develop a method for the classification of structures in solute-solvent systems.
-As one of the results, a Python package called ClustTraj is being developed.
-The project is being carried with a Brazilian PhD student from the University of S\~ao Paulo.
+Together with a PhD student from the University of S\~ao Paulo, we are developing a software package called ClustTraj.
 
-\section*{Computational Skills}
-I am proficient with Python, Fortran, C, Bash, and C++. 
-I have experience with OpenMP and MPI parallelization, code profiling, and optimization. 
-GitHub is where I host most of my projects, and most are open source.
-I have some experience using GitHub actions for unit tests, deploying documentation, and Python packages.
+\section*{Languages}
+Portuguese (native), English (fluent) and Norwegian (novice).
+
+\section*{Technical Skills}
+I am proficient with Python, Fortran, C, Bash, and C++, and have experience with OpenMP and MPI parallelization, code profiling, and optimization. 
+I also have some experience using GitHub actions for automating unit testing, deploying documentation, and publishing Python packages.
 
 Concerning scientific software, I am familiar with DICE, GOTNano, HylleraasMD, Cassandra, GROMACS, and LAMMPS for molecular simulations. 
 For electronic structure calculations, I have some experience with Gaussian, FHI-AIMS and Quantum Espresso.
@@ -292,13 +288,13 @@ For electronic structure calculations, I have some experience with Gaussian, FHI
 Apart from many scripts and smaller software, my major contributions are developing:\\
 
 \newsoftware{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE}{\href{https://portal.if.usp.br/dice}{https://portal.if.usp.br/dice} \\ 
-A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules. I have also implemented shared memory parallelization and improved the overall performance. The code is written in Fortran and has OpenMP parallelization.}
+A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules, and parallelization. The code is written in Fortran and has OpenMP parallelization.}
 
 \newsoftware{Rondina GG, \textbf{Cezar HM}, Da Silva JLF}{GOTNano}{ 
 A code for global optimization and sampling of thermodynamic properties of nanoclusters. My main contribution is the implementation of the Parallel Tempering Monte Carlo algorithm used to sample the thermodynamic properties. The code is written in C and has OpenMP parallelization.}
 
 \newsoftware{Ledum M, Carrer M, Sen S, Li X, \textbf{Cezar HM}, Cascella M, Bore SL}{Hylleraas MD}{\href{https://github.com/Cascella-Group-UiO/HyMD}{https://github.com/Cascella-Group-UiO/HyMD} \\ 
-A molecular dynamics software that implements the Hamiltonian hybrid particle-field method.}
+A molecular dynamics software that implements the Hamiltonian hybrid particle-field method. I am currently the main maintainer of the software, and my main contribution is the PLUMED interface. HyMD is written in Python and Fortran.}
 
 \newsoftware{\textbf{Cezar HM}, Ribeiro RB}{ClustTraj}{\href{https://github.com/hmcezar/clusttraj}{https://github.com/hmcezar/clusttraj} \\ 
 A parallel Python package that performs clustering over an atomistic molecular simulation trajectory, searching for the minimum RMSD between each structure and classifying using hierarchical clustering, with options to deal with solute solvent systems.}
@@ -371,7 +367,7 @@ A package containing several scripts used to prepare DICE inputs and analyze sim
 % this is not in a preprint repository yet
 % \newarticle{nbzr_stbs.png}{Salvador CAF, \textbf{Cezar HM}, Miranda CR}{Atomistic simulations of symmetric tilt grain boundaries in Nb-1Zr alloys}{}{}{}{We investigate the mechanical properties of three different symmetric tilt grain boundaries (STBs) at the \ce{Nb-1Zr} at.\% compositions. Using non equilibrium molecular dynamics simulations and Monte Carlo moves, we obtain that the \ce{Zr} stays at the grain boundray, and the addition of small amounts of \ce{Zr} can help pin the STBs. We also analyze the stress-strain curves and fracture patterns.}
 
-\section*{Invited and contributed talks}
+\section*{Selected invited and contributed talks}
 \talk{Sep 2019}{S\~ao Carlos, SP}\textbf{DICEtools and Clustering-Traj: From simulation setup to data analysis} \\ III New Energies Innovation Center - Computational Material Science Division Workshop\\[0.05in]
 
 \talk{Feb 2019}{S\~ao Carlos, SP}\textbf{Monte Carlo Methods} \\ II New Energies Innovation Center - Computational Material Science Division Workshop (Invited talk)\\[0.05in]
@@ -380,7 +376,7 @@ A package containing several scripts used to prepare DICE inputs and analyze sim
 
 \talk{Aug 2017}{Livorno, Italy}\textbf{Configurational Bias Monte Carlo of Molecules in Solvent and Comparison with Molecular Dynamics} \\ Coding Solvation Workshop \\[0.05in]
 
-\talk{May 2017}{Recife, PE}\textbf{Comparsion of the sampling of Molecular Dynamics and Configurational Bias Monte Carlo for 1,2- dichloroethane and octane.} \\ III Advanced School on Biomolecular Simulation \\[0.05in]
+% \talk{May 2017}{Recife, PE}\textbf{Comparsion of the sampling of Molecular Dynamics and Configurational Bias Monte Carlo for 1,2- dichloroethane and octane.} \\ III Advanced School on Biomolecular Simulation \\[0.05in]
 
 \talk{Mar 2017}{Rio de Janeiro, RJ}\textbf{How Indiana Jones is actually a bad explorer when it comes to molecules and how I can do better} \\ Finals of My Thesis in 180 seconds (Swissnex
 Brazil) \\[0.05in]
