@@ -171,7 +171,7 @@
 %\Large CONTACT
 %%\includegraphics[width=0.7in,valign=c]{images/john_chodera_sm.pdf}
 \hspace{35pt}
-\includegraphics[width=1.3in,valign=c]{images/henrique2.jpg}
+\includegraphics[width=1.4in,valign=c]{images/henrique2.jpg}
 \end{minipage}
 %\quad
 \begin{minipage}[t]{3in}
@@ -179,6 +179,7 @@
 {\bf email} & \href{mailto:h.m.cezar@kjemi.uio.no}{\href{mailto:h.m.cezar@kjemi.uio.no}{h.m.cezar@kjemi.uio.no}}\\[0.05in]
 {\bf github} & \href{https://github.com/hmcezar}{https://github.com/hmcezar}\\[0.05in]
 {\bf orcid} & \href{https://orcid.org/0000-0002-7553-0482}{0000-0002-7553-0482}\\[0.05in]
+{\bf linkedin} & \href{https://www.linkedin.com/in/hmcezar}{https://www.linkedin.com/in/hmcezar}\\[0.05in]
 {\bf mobile} & +47 968 17 973\\[0.05in]
 {\bf post} & 
 \parbox[t]{3.0in}{
@@ -194,7 +195,8 @@
 \noindent\fbox{%
     \parbox{\textwidth}{ 
     {Ph.D in Physics, working with computational physics/chemistry and developing scientific software. 
-    My research interests are in the development of new methods for molecular simulation and the use of molecular simulation and quantum mechanics calculations to solve problems in physical chemistry, biochemistry, and materials science.}
+    My research interests are in the development of new methods for molecular simulation and the use of such methods to solve problems in physical chemistry, biochemistry, and materials science.}
+    % My research interests are in the development of new methods for simulation and data analysis, including developing and employing machine learning methods for solving scientific problems.}
     }
 }
 
@@ -252,24 +254,23 @@ CNPq Scientific Initiation Fellowship - Advisor: Prof. Leonardo P. Maia
 
 \section*{Research Experience}
 My research is mainly focused on the development of algorithms for classical molecular simulation. 
-Specifically, I have experience implementing and using Monte Carlo methods and molecular dynamics for the simulation of solute-solvent, interface and biomolecular systems.
-During my Master I have implemented a parallel tempering Monte Carlo algorithm in GOTNano, and have used this same software, together with FHI-aims, to investigate the properties of transition metal nanoclusters.
-In my PhD I developed a Configurational Bias Monte Carlo method for the efficient simulation of flexible molecules in solution, and implemented it in DICE, showing that the method may perform better than standard molecular dynamics for the sampling of systems with high energy barriers between conformers.
-More recently, I have been maintaining Hylleraas MD, a Hamiltonian hybrid particle-field software, in which I have implemented a interface with PLUMED.
+Specifically, I have experience implementing and using Monte Carlo methods and molecular dynamics for the simulation of solute-solvent, interfacial and biomolecular systems.
+At the Hylleraas Centre, I have been maintaining Hylleraas MD, a Hamiltonian hybrid particle-field software, in which I have implemented a interface with PLUMED.
 I have also given contributions to PLUMED development regarding the implementation of small angle neutron scattering (SANS) and the Python MPI interface.
-In my career I have used methods such as molecular dynamics for the simulation of molecular systems, global optimization algorithms to search for the putative global minimum configurations, clustering algorithms to analyze data from simulations, fitting of interatomic potentials, and density functional theory to investigate the electronic structure and absorption spectra of molecules and transition metal nanoclusters.
+On top of the molecular simulation methods, I have some experience with global optimization algorithms, clustering algorithms, fitting of interatomic potentials, and density functional theory.
 
 Recently, I have been employing metainference, a Bayesian inference method, to bias coarse-grain simulations towards agreement with small angle scattering spectra in collaboration with experimentalists.
-
-I'm also leading a project to develop a method for the classification of structures in solute-solvent systems.
-Together with a PhD student from the University of S\~ao Paulo, we are developing a software package called ClustTraj.
+With my collaborators, we are exploring the use of machine learning potentials (NequIP and Allegro) and their integration with the the Hylleraas Software Platform.
+I'm also leading a project to develop a method for the classification of structures in solute-solvent systems (ClustTraj).
 
 \section*{Languages}
 Portuguese (native), English (fluent) and Norwegian (novice).
 
 \section*{Technical Skills}
 I am proficient with Python, Fortran, C, Bash, and C++, and have experience with OpenMP and MPI parallelization, code profiling, and optimization. 
+My Python projects have used libraries like NumPy, Pandas, SciPy, mpi4py, scikit-learn and matplotlib.
 I also have some experience using GitHub actions for automating unit testing, deploying documentation, and publishing Python packages.
+I know how to use HPC systems like SLURM and PBS, and have experience with Docker and Singularity containers.
 
 Concerning scientific software, I am familiar with DICE, GOTNano, HylleraasMD, Cassandra, GROMACS, and LAMMPS for molecular simulations. 
 For electronic structure calculations, I have some experience with Gaussian, FHI-AIMS and Quantum Espresso.
@@ -285,7 +286,7 @@ For electronic structure calculations, I have some experience with Gaussian, FHI
 \href{https://github.com/hmcezar}{GitHub}, 
 \href{https://gitlab.com/hmcezar}{GitLab}
 
-Apart from many scripts and smaller software, my major contributions are developing:\\
+Apart from many scripts and smaller software (see the links above), my major contributions are developing:\\
 
 \newsoftware{\textbf{Cezar HM}, Canuto S, Coutinho K}{DICE}{\href{https://portal.if.usp.br/dice}{https://portal.if.usp.br/dice} \\ 
 A Monte Carlo code for the molecular simulation of liquids and gases using classical force fields. My main contribution is the coding and development of a Configurational Bias Monte Carlo method used to sample the internal degrees of freedom of the molecules, and parallelization. The code is written in Fortran and has OpenMP parallelization.}
@@ -294,13 +295,13 @@ A Monte Carlo code for the molecular simulation of liquids and gases using class
 A code for global optimization and sampling of thermodynamic properties of nanoclusters. My main contribution is the implementation of the Parallel Tempering Monte Carlo algorithm used to sample the thermodynamic properties. The code is written in C and has OpenMP parallelization.}
 
 \newsoftware{Ledum M, Carrer M, Sen S, Li X, \textbf{Cezar HM}, Cascella M, Bore SL}{Hylleraas MD}{\href{https://github.com/Cascella-Group-UiO/HyMD}{https://github.com/Cascella-Group-UiO/HyMD} \\ 
-A molecular dynamics software that implements the Hamiltonian hybrid particle-field method. I am currently the main maintainer of the software, and my main contribution is the PLUMED interface. HyMD is written in Python and Fortran.}
+A molecular dynamics software that implements the Hamiltonian hybrid particle-field method. I am currently the main maintainer of the software, and my main contribution is the PLUMED interface. HyMD is written in Python and Fortran and uses MPI for parallelization.}
 
 \newsoftware{\textbf{Cezar HM}, Ribeiro RB}{ClustTraj}{\href{https://github.com/hmcezar/clusttraj}{https://github.com/hmcezar/clusttraj} \\ 
 A parallel Python package that performs clustering over an atomistic molecular simulation trajectory, searching for the minimum RMSD between each structure and classifying using hierarchical clustering, with options to deal with solute solvent systems.}
 
-\newsoftware{\textbf{Cezar HM}}{DICEtools}{\href{https://github.com/hmcezar/dicetools}{https://github.com/hmcezar/dicetools} \\ 
-A package containing several scripts used to prepare DICE inputs and analyze simulation data.}
+% \newsoftware{\textbf{Cezar HM}}{DICEtools}{\href{https://github.com/hmcezar/dicetools}{https://github.com/hmcezar/dicetools} \\ 
+% A package containing several scripts used to prepare DICE inputs and analyze simulation data.}
 
 % \newsoftware{\textbf{Cezar HM}}{pdb2lmp}{\href{https://github.com/Sampa-USP/pdb2lmp}{https://github.com/Sampa-USP/pdb2lmp} \\ 
 % Create LAMMPS topologies from structure files.}
@@ -316,7 +317,7 @@ A package containing several scripts used to prepare DICE inputs and analyze sim
 
 %%%%%%%%%%%%
 
-\textit{h-index: 8, citations: 149 (October 4th, 2023)} \\
+\textit{h-index: 8, citations: 162 (May 24th, 2024)} \\
 \href{https://www.webofscience.com/wos/author/record/445303}{Web of Science}, 
 \href{https://www.scopus.com/authid/detail.uri?authorId=57188802591}{Scopus},
 \href{https://orcid.org/0000-0002-7553-0482}{ORCID}, 
@@ -330,9 +331,11 @@ A package containing several scripts used to prepare DICE inputs and analyze sim
 
 \subsection*{Published}
 
+\newarticle{non-bo-structure.png}{Lang L, \textbf{Cezar HM}, Adamowicz L, Pedersen TB}{Quantum Definition of Molecular Structure}{\emph{Journal of the American Chemical Society} 146:1760, 2024}{DOI}{https://doi.org/10.1021/jacs.3c11467}{In this manuscript we use Monte Carlo to sample an all-particle wavefunction, and propose a new definition of molecular structure beyond the Born-Oppenheimer approximation.}
+
 \newarticle{sans-plumed.jpeg}{\textbf{Cezar HM}, Cascella M}{SANS Spectra with PLUMED: Implementation and Application to Metainference}{\emph{Journal of Chemical Information and Modeling} 63:4979, 2023}{DOI}{https://dx.doi.org/10.1021/acs.jcim.3c00724}{In this Application Note we describe our implementation of Small Angle Neutron Scattering spectra including the use of a resolution function and its application to metainference simulations.}
 
-\newarticle{flip-flop.jpeg}{Carrer M, Nielsen JE, \textbf{Cezar HM}, Lund R, Cascella M, Soares TA}{Accelerating Lipid Flip-Flop at Low Concentrations: A General Mechanism for Membrane Binding Peptides}{\emph{The Journal of Physical Chemistry Letters} 14:7014, 2023}{DOI}{https://doi.org/10.1021/acs.jpclett.3c01284}{We report a combined theoretical-experimental study of the bis(2-pyridyl)-bis-imidazole in solution, determining the protonation sites, most favorable conformations and absorption spectra in different solvents.}
+\newarticle{flip-flop.jpeg}{Carrer M, Nielsen JE, \textbf{Cezar HM}, Lund R, Cascella M, Soares TA}{Accelerating Lipid Flip-Flop at Low Concentrations: A General Mechanism for Membrane Binding Peptides}{\emph{The Journal of Physical Chemistry Letters} 14:7014, 2023}{DOI}{https://doi.org/10.1021/acs.jpclett.3c01284}{We show that the flip-flop of lipids in a membrane can be accelerated by the presence of peptides. The mechanism is entropic, due to the restriction in mobility of lipids introduced by the presence of the peptide, and is not necessarily driven by smaller enthalpic barriers.}
 
 \newarticle{dpbimH.png}{Franco LR, Toledo KCF, Matias TA, Benavides PA, \textbf{Cezar HM}, Araujo CMG, Coutinho K, Araki K}{Unraveling the acid-base characterization and solvent effects on structural and electronic properties of a bis-bidentated bridging ligand}{\emph{Physical Chemistry Chemical Physics} 24:10222, 2022}{DOI}{https://doi.org/10.1039/D1CP03912A}{We report a combined theoretical-experimental study of the bis(2-pyridyl)-bis-imidazole in solution, determining the protonation sites, most favorable conformations and absorption spectra in different solvents.}
 
@@ -356,11 +359,11 @@ A package containing several scripts used to prepare DICE inputs and analyze sim
 
 \newarticle{cnt_gas_potential.png}{\textbf{Cezar HM}, Lanna TD, Damasceno DA, Kirch A, Miranda CR}{Revisiting greenhouse gases adsorption in carbon nanostructures: advances through a combined first-principles and molecular simulation approach}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.11710}{We investigate the adsorption properties of \ce{CH4} and \ce{CO2} in carbon nanotubes (CNTs) using different force fields, showing that the adsorption energies are underestimated. A new interatomic potential is proposed based on the first-principles calculations.}
 
-\newarticle{non-bo-structure.png}{Lang L, \textbf{Cezar HM}, Adamowicz L, Pedersen TB}{Finding Molecular Structure in Molecular Wavefunctions}{ChemRxiv}{DOI}{https://doi.org/10.26434/chemrxiv-2023-mrxng}{In this manuscript we use Monte Carlo to sample an all-particle wavefunction, and propose a new definition of molecular structure beyond the Born-Oppenheimer approximation.}
+\newarticle{diff_hymd.pdf}{Carrer M, \textbf{Cezar HM}, Bore SL, Ledum M, Cascella M}{Learning Force Field Parameters from Differentiable Particle-Field Molecular Dynamics}{ChemRxiv}{DOI}{https://doi.org/10.26434/chemrxiv-2024-js244-v3}{We develop a differentiable molecular dynamics software based on the Hamiltonian hybrid particle-field formalism, and use it to establish a protocol for automated optimization of force field parameters.}
 
 \newarticle{sio2_nts.png}{\textbf{Cezar HM}, Miranda CR}{Water adsorption in ultrathin silica nanotubes}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.09965}{We investigate the structure and adsorption properties for three sizes of \ce{SiO2} nanotubes, understanding the adsorption in terms of the accessible volume.}
 
-\newarticle{n2-isotherms.png}{Martins Junior CA, \textbf{Cezar HM}, Damasceno DA, Miranda CR}{Effects of van der Waals interaction on the N2 adsorption on carbon nanotubes: proposal of new force field parameters}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.10117}{We investigate the adsorption of \ce{N2} in CNTs, proposing an interatomic potential that correctly describe the energies for different adsorption sites, leading to a more accurate description of adsorption isotherms.}
+\newarticle{n2-isotherms.png}{Martins Junior CA, \textbf{Cezar HM}, Damasceno DA, Miranda CR}{Effects of van der Waals interaction on the \ce{N2} adsorption on carbon nanotubes: proposal of new force field parameters}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.10117}{We investigate the adsorption of \ce{N2} in CNTs, proposing an interatomic potential that correctly describe the energies for different adsorption sites, leading to a more accurate description of adsorption isotherms.}
 
 \newarticle{cnt-mec-prop.png}{Damasceno DA, \textbf{Cezar HM}, Lanna TD, Kirch A, Miranda CR}{Mechanical and adsorption properties of greenhouse gases filled carbon nanotubes}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.11708}{Using molecular simulations we investigate the mechanical stability of CNTs filled with mixtures of \ce{CO2} and \ce{CH4}, finding that under compression several parameters can play a role in the in the materials response.}
 
