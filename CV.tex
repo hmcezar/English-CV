@@ -171,7 +171,7 @@
 %\Large CONTACT
 %%\includegraphics[width=0.7in,valign=c]{images/john_chodera_sm.pdf}
 \hspace{35pt}
-\includegraphics[width=1.4in,valign=c]{images/henrique2.jpg}
+\includegraphics[width=1.4in,valign=c]{images/henrique3.jpg}
 \end{minipage}
 %\quad
 \begin{minipage}[t]{3in}
@@ -204,8 +204,10 @@
 
 \section*{Education and positions}
 
-\noindent\years{2022--}\textbf{Postdoctoral researcher, Hylleraas Centre for Quantum Molecular Sciences, University of Oslo}\\
-Further developments in the Hamiltonian hybrid particle-field molecular dynamics and use with metainference
+\noindent\years{2024--}\textbf{Researcher, Hylleraas Centre for Quantum Molecular Sciences, University of Oslo}\\
+Working in the H2O-MOF project developing new methods and applying machine learning potentials to investigate the conductivity of ionic species through metal-organic frameworks membranes.\\
+\noindent\years{2022--2024}\textbf{Postdoctoral researcher, Hylleraas Centre for Quantum Molecular Sciences, University of Oslo}\\
+Further developments in the Hamiltonian hybrid particle-field molecular dynamics and use with metainference - 
 Supervisor: Prof. Michele Cascella \\
 \noindent\years{2020--2022}\textbf{Postdoctoral researcher, Institute of Physics, University of S\~ao Paulo}\\
 Computational nanofluidics studies on the confinement effects on fluid-solid interfaces.\\
@@ -255,29 +257,27 @@ CNPq Scientific Initiation Fellowship - Advisor: Prof. Leonardo P. Maia
 \section*{Research Experience}
 My research is mainly focused on the development of algorithms for classical molecular simulation. 
 Specifically, I have experience implementing and using Monte Carlo methods and molecular dynamics for the simulation of solute-solvent, interfacial and biomolecular systems.
-At the Hylleraas Centre, I have been maintaining Hylleraas MD, a Hamiltonian hybrid particle-field software, in which I have implemented a interface with PLUMED.
-I have also given contributions to PLUMED development regarding the implementation of small angle neutron scattering (SANS) and the Python MPI interface.
+I also have experience using Metainference to integrate experimental and simulation data, and have given contributions to PLUMED in this regard.
 On top of the molecular simulation methods, I have some experience with global optimization algorithms, clustering algorithms, fitting of interatomic potentials, and density functional theory.
 
-Recently, I have been employing metainference, a Bayesian inference method, to bias coarse-grain simulations towards agreement with small angle scattering spectra in collaboration with experimentalists.
-With my collaborators, we are exploring the use of machine learning potentials (NequIP and Allegro) and their integration with the the Hylleraas Software Platform.
-I'm also leading a project to develop a method for the classification of structures in solute-solvent systems (ClustTraj).
+Recently, my collaborators and I have been working on the development of a active learning method to train machine learning potentials for molecular simulations using less reference data.
+The method is called Calibrated Adversarial Geometry Optimization (CAGO) and generates new configurations based on high uncertatinty forces.
 
 \section*{Languages}
 Portuguese (native), English (fluent) and Norwegian (novice).
 
-\section*{Technical Skills}
-I am proficient with Python, Fortran, C, Bash, and C++, and have experience with OpenMP and MPI parallelization, code profiling, and optimization. 
-My Python projects have used libraries like NumPy, Pandas, SciPy, mpi4py, scikit-learn and matplotlib.
-I also have some experience using GitHub actions for automating unit testing, deploying documentation, and publishing Python packages.
-I know how to use HPC systems like SLURM and PBS, and have experience with Docker and Singularity containers.
+% \section*{Technical Skills}
+% I am proficient with Python, Fortran, C, Bash, and C++, and have experience with OpenMP and MPI parallelization, code profiling, and optimization. 
+% My Python projects have used libraries like NumPy, Pandas, SciPy, mpi4py, scikit-learn and matplotlib.
+% I also have some experience using GitHub actions for automating unit testing, deploying documentation, and publishing Python packages.
+% I know how to use HPC systems like SLURM and PBS, and have experience with Docker and Singularity containers.
 
-Concerning scientific software, I am familiar with DICE, GOTNano, HylleraasMD, Cassandra, GROMACS, and LAMMPS for molecular simulations. 
-For electronic structure calculations, I have some experience with Gaussian, FHI-AIMS and Quantum Espresso.
+% Concerning scientific software, I am familiar with DICE, GOTNano, HylleraasMD, Cassandra, GROMACS, and LAMMPS for molecular simulations. 
+% For electronic structure calculations, I have some experience with Gaussian, FHI-AIMS and Quantum Espresso.
 
 % \setstretch{1.00} 
 
-\eject
+% \eject
 
 %%%%%%%%%%%%
 
@@ -300,8 +300,8 @@ A molecular dynamics software that implements the Hamiltonian hybrid particle-fi
 \newsoftware{\textbf{Cezar HM}, Ribeiro RB}{ClustTraj}{\href{https://github.com/hmcezar/clusttraj}{https://github.com/hmcezar/clusttraj} \\ 
 A parallel Python package that performs clustering over an atomistic molecular simulation trajectory, searching for the minimum RMSD between each structure and classifying using hierarchical clustering, with options to deal with solute solvent systems.}
 
-\newsoftware{\textbf{Cezar HM}, Sveinsson HA, Bore SL \textit{et al.}}{Hylleraas Software Platform NequIP/Allegro interface}{\href{https://gitlab.com/hylleraasplatform/hylleraas-interfaces}{https://gitlab.com/hylleraasplatform/hylleraas-interfaces} \\ 
-Interface in the Hylleraas Software Platform for the training and evaluation of NequIP/Allegro models. The interface is used in the active learning package under development in the same platform. I highlight that the interface for other software in the Git repository are contributions from other people.}
+\newsoftware{\textbf{Cezar HM} \textit{et al.}}{Hylleraas Software Platform}{\href{https://gitlab.com/hylleraasplatform}{https://gitlab.com/hylleraasplatform} \\ 
+A platform to facilitate creating workflows and working with scientific software. My main contributions are to the development of the active learning package, and the interface for the training and evaluation of NequIP/Allegro models.}
 
 % \newsoftware{\textbf{Cezar HM}}{DICEtools}{\href{https://github.com/hmcezar/dicetools}{https://github.com/hmcezar/dicetools} \\ 
 % A package containing several scripts used to prepare DICE inputs and analyze simulation data.}
@@ -320,7 +320,7 @@ Interface in the Hylleraas Software Platform for the training and evaluation of 
 
 %%%%%%%%%%%%
 
-\textit{h-index: 8, citations: 171 (August 9th, 2024)} \\
+% \textit{h-index: 8, citations: 189} \\
 \href{https://www.webofscience.com/wos/author/record/445303}{Web of Science}, 
 \href{https://www.scopus.com/authid/detail.uri?authorId=57188802591}{Scopus},
 \href{https://orcid.org/0000-0002-7553-0482}{ORCID}, 
@@ -333,6 +333,10 @@ Interface in the Hylleraas Software Platform for the training and evaluation of 
 %%%%%%%%%%%%
 
 \subsection*{Published}
+
+\newarticle{c12eo_tx100.jpg}{\textbf{Cezar HM}, Bjørnestad VA, Prévost S, Lund R, Cascella M}{Beyond Core–Shell Micellar Structures: Complex Structures in Simple Surfactants}{\emph{Small Structures} 2400553, 2024}{DOI}{https://doi.org/10.1002/sstr.202400553}{We show how using Metainference one can go beyond fitting simple geometric models to interpret SAXS and SANS data, and how this is necessary even for relatively simple systems. We also address Triton X-100 aggregates, for which structures have been debated.}
+
+\newarticle{multigauss_hhpf.jpeg}{Sen S, \textbf{Cezar HM}, Ledum M, Li X, Cascella M}{Phase coexistence in Hamiltonian hybrid particle–field theory using a Multi-Gaussian approach}{\emph{The Journal of Physical Chemistry B} 128:11739, 2024}{DOI}{https://doi.org/10.1021/acs.jpcb.4c05525}{This study introduces an implementation of multiple Gaussian filters within the Hamiltonian hybrid particle-field (HhPF) theory. Using a two Gaussian filter we show that HhPF effectively captures detailed information on phase coexistence and interfacial phenomena.}
 
 \newarticle{diff_hymd.pdf}{Carrer M, \textbf{Cezar HM}, Bore SL, Ledum M, Cascella M}{Learning Force Field Parameters from Differentiable Particle-Field Molecular Dynamics}{\emph{Journal of Chemical Information and Modeling} 64:5510, 2024}{DOI}{https://doi.org/10.1021/acs.jcim.4c00564}{We develop a differentiable molecular dynamics software based on the Hamiltonian hybrid particle-field formalism, and use it to establish a protocol for automated optimization of force field parameters.}
 
@@ -363,6 +367,11 @@ Interface in the Hylleraas Software Platform for the training and evaluation of 
 % \subsection*{Accepted for publication}
 
 \subsection*{Preprints}
+
+\newarticle{cago_al.pdf}{\textbf{Cezar HM}, Bodenstein T, Sveinsson HA, Ledum M, Reine S, Bore SL}{Learning atomic forces from uncertainty-calibrated adversarial attacks}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2502.18314}{We develop Calibrated Adversarial Geometry Optimization (CAGO). The method calibrates the uncertainty estimates for the predicted forces and generates new configurations with high uncertainty which are fed to the active learning loop.}
+
+\newarticle{beyond_pores.png}{Koynarev VR, Nader ML, Borgos KKA, \textbf{Cezar HM}, Porcar L, Narayanan T, Cascella M, Lund R}{Beyond Structural Pores: Transient Permeabilization of Lipid Membranes by Antimicrobial Peptides}{ChemRxiv}{DOI}{https://doi.org/10.26434/chemrxiv-2025-bmtmq}{Thoery and experiments are combined to reveal that even unstructured and non-penetrating antimicrobial peptides (AMPs) can rapidly permeabilize lipid membranes, with complete ion equilibration occurring in only a few tens of milliseconds.}
+
 \newarticle{sio2_nts.png}{\textbf{Cezar HM}, Miranda CR}{Water adsorption in ultrathin silica nanotubes}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.09965}{We investigate the structure and adsorption properties for three sizes of \ce{SiO2} nanotubes, understanding the adsorption in terms of the accessible volume.}
 
 \newarticle{n2-isotherms.png}{Martins Junior CA, \textbf{Cezar HM}, Damasceno DA, Miranda CR}{Effects of van der Waals interaction on the \ce{N2} adsorption on carbon nanotubes: proposal of new force field parameters}{arXiv}{DOI}{https://doi.org/10.48550/arXiv.2307.10117}{We investigate the adsorption of \ce{N2} in CNTs, proposing an interatomic potential that correctly describe the energies for different adsorption sites, leading to a more accurate description of adsorption isotherms.}
